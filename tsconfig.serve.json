@@ -5,7 +5,6 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "module": "commonjs",
     "target": "es5",
     "types": [
       "node"
@@ -18,7 +17,7 @@
     ]
   },
   "files": [
-    "app/main.ts"
+    "main.ts"
   ],
   "exclude": [
     "node_modules",

@@ -1,0 +1,66 @@
+<div style="padding-bottom: 1%; display: flex; margin-left: 10%; font-size: larger; font-weight: 600;">
+    
+    <div id="filePicker" style="float:left;">
+        <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black">
+            <mat-label>Select Raw File</mat-label>
+            <mat-select (selectionChange)="RawFileChange($event)">
+              <mat-option *ngFor="let rawFile of rawFiles" [value]="rawFile">
+                {{rawFile.fileName}}
+              </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div style="float:left; margin-left:3%; font-size: larger; font-weight: 600;">
+        <button mat-raised-button color="primary" (click)="reCalculate()" style="height:60px; margin-top:4%; font-size: xx-large; font-weight: 500;">Recalculate</button>
+    </div>
+
+    <div style="float:left; margin-left:3%; font-size: larger; font-weight: 600;">
+        <button mat-raised-button color="primary" (click)="saveResultClick()" style="height:60px; margin-top:4%; font-size: xx-large; font-weight: 500;" disabled="true">Save Result</button>
+    </div>
+
+    <div style="float:left; margin-left:3%; font-size: larger; font-weight: 600; margin-top: 8px;">
+        <mat-form-field>
+            <mat-label style="color:black">Peak Threshold</mat-label>
+            <input matInput [(ngModel)]="peakThres">
+        </mat-form-field>
+    </div>
+
+    <div style="float:left; margin-left: 3%; font-size: larger; font-weight: 400; margin-top: 40px;">
+        <mat-label style="color:black">Status: {{status}}</mat-label>
+    </div>
+</div>
+
+<div echarts [options]="chartOption" class="demo-chart" style="font-size: larger; font-weight: 600; margin-bottom: 20px;"></div>
+
+<div style="padding-bottom: 10px; visibility:hidden; font-size: larger; font-weight: 600;" id="resultTable">
+    <table mat-table [dataSource]="flatPeaks" class="mat-elevation-z8">
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> Elution Order </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+          
+        <ng-container matColumnDef="rt">
+            <th mat-header-cell *matHeaderCellDef> Retention Time(s) </th>
+            <td mat-cell *matCellDef="let element"> {{element.rt}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="fwhm">
+            <th mat-header-cell *matHeaderCellDef>FWHM(s) </th>
+            <td mat-cell *matCellDef="let element"> {{element.fwhm}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="height">
+            <th mat-header-cell *matHeaderCellDef>Height(mV)</th>
+            <td mat-cell *matCellDef="let element"> {{element.height}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="area">
+            <th mat-header-cell *matHeaderCellDef>Area(mV*s)</th>
+            <td mat-cell *matCellDef="let element">{{element.area}}</td>
+        </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>

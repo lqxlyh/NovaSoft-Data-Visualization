@@ -1,0 +1,2743 @@
+[33mcommit c017541a6a4dda024d5c54aa3e715a3e3f44e8b2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: RuiHuang <rhhq7@mail.missouri.edu>
+Date:   Tue Mar 23 16:44:00 2021 -0500
+
+    Implement analysis page
+
+[33mcommit a698ea7e7b4e5faafecf4ef9e6fb4323098b6b0f[m
+Author: 123RuiHuang <rhhq7@mail.missouri.edu>
+Date:   Mon Mar 8 15:32:00 2021 -0600
+
+    add connection status
+
+[33mcommit 6d1bb2611bb95aad0967108fb940f7d8c4a9fc7e[m
+Author: 123RuiHuang <rhhq7@mail.missouri.edu>
+Date:   Mon Feb 15 09:50:14 2021 -0600
+
+    build the desktop app
+
+[33mcommit 0789222675d804ee6466e382c09fbff09f6cc8a8[m
+Author: 123RuiHuang <rhhq7@mail.missouri.edu>
+Date:   Fri Feb 5 17:45:12 2021 -0600
+
+    make some modification to make it a start up as iarpa desk app
+
+[33mcommit 8feeb37b83509d2bf694ac6abddf8cb780cde353[m
+Author: NanovaEnvironmental <Nanovaenv@gmail.com>
+Date:   Thu Jan 7 15:21:21 2021 -0600
+
+    Add login and sync page
+    
+    https://github.com/NanovaEnvironmental/CloudFileSynchronizer/pull/1
+
+[33mcommit d9da996dcaa5a0ba0c50210f0136e1f7ba01082a[m
+Author: RuiHuang <rhhq7@mail.missouri.edu>
+Date:   Thu Dec 31 13:59:21 2020 -0600
+
+    Update README.md
+
+[33mcommit 4f5189e2312cfb0c71b28de5c19f9d988d0109a3[m
+Author: 123RuiHuang <rhhq7@mail.missouri.edu>
+Date:   Thu Dec 31 11:37:31 2020 -0600
+
+    add http service for login and file download
+
+[33mcommit 83e91fca75478ef6be15973d055190cf75662050[m
+Author: 123RuiHuang <rhhq7@mail.missouri.edu>
+Date:   Thu Dec 31 11:29:48 2020 -0600
+
+    remove unused files
+
+[33mcommit 4a48febb9a2fc56ab656445d0f647bc6abdcb3fa[m
+Author: 123RuiHuang <rhhq7@mail.missouri.edu>
+Date:   Thu Dec 31 11:09:37 2020 -0600
+
+    implement method to save file in electron service
+
+[33mcommit fe55273d206819b9431530f4884107552d7abb66[m[33m ([m[1;33mtag: 9.0.3[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Tue Dec 8 10:00:04 2020 +0100
+
+    [Bumped Version] 9.0.3
+
+[33mcommit becaa73b4078482bf89dd45be1809f35f3870b85[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Tue Dec 8 09:59:25 2020 +0100
+
+    misc/ upgrade to Electron 11
+
+[33mcommit 203e608ad4c5538e78078b8dfdf51cc709adcc75[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Thu Nov 26 09:08:38 2020 +0100
+
+    fix/ upgrade angular to 11.0.2
+
+[33mcommit 922bbf9fc36c9fedab3af2dd9c0f23d7355c3f33[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Nov 15 16:16:40 2020 +0100
+
+    misc/ upgrade dependencies
+
+[33mcommit be43e092bf6a6e191f99c23196059be6ded45d97[m[33m ([m[1;33mtag: 9.0.2[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Nov 15 11:22:34 2020 +0100
+
+    [Bumped Version] 9.0.2
+
+[33mcommit 9933622bda3cedf378966c07309a03fb05dd4788[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Nov 15 11:21:07 2020 +0100
+
+    misc/ remove old code
+
+[33mcommit 4ee52fe4226379e141cf434eba13a53364e12868[m
+Merge: 066dcdb b8429b8
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Nov 15 10:41:08 2020 +0100
+
+    Merge pull request #548 from artem-mangilev/master
+    
+    Fix typo in eslint rule
+
+[33mcommit 066dcdb9eec1909710a2ee28913824216e8b5489[m[33m ([m[1;33mtag: 9.0.1[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Nov 14 21:50:38 2020 +0100
+
+    [Bumped Version] 9.0.1
+
+[33mcommit 04d9e8a429c954195c413e19379a50c1a0fec0a6[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Nov 14 21:22:35 2020 +0100
+
+    ref/ support remote module in unit test
+
+[33mcommit a7964be3ee5fbb1575e9090e58d7e476c6ede3df[m[33m ([m[1;33mtag: 9.0.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Nov 14 21:16:17 2020 +0100
+
+    [Bumped Version] 9.0.0
+
+[33mcommit d265dfa80bbe8f5d0a961a1b97f1f9acb4192278[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Nov 14 21:10:45 2020 +0100
+
+    misc/ upgrade to Angular 11
+
+[33mcommit e0fb53998c87e815664732f2c1b07ca8e29e54a0[m[33m ([m[1;33mtag: 8.0.6[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Nov 14 20:31:51 2020 +0100
+
+    [Bumped Version] 8.0.6
+
+[33mcommit 0b9b8b3d791d850c8398fad17119d4e161633906[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Nov 14 20:28:27 2020 +0100
+
+    fix/ zonejs version
+
+[33mcommit b8429b8e7e811c3f3b0f85ab8e2bb5f925696c13[m
+Author: Artem Mangilev <53087914+artem-mangilev@users.noreply.github.com>
+Date:   Fri Nov 6 21:00:54 2020 +0500
+
+    Fix typo in eslint rule
+
+[33mcommit 237442769c1bc39bc002af1bfabb7ee889ed1b8e[m[33m ([m[1;33mtag: 8.0.5[m[33m)[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Mon Sep 28 16:41:59 2020 +0200
+
+    [Bumped Version] 8.0.5
+
+[33mcommit 07786a2db448169102005743050b7e8406dfd967[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Mon Sep 28 16:41:25 2020 +0200
+
+    misc/ upgrade to Electron 10 & Angular 10.1
+
+[33mcommit 33098555c6248710a109679713413b31a7f382d5[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Wed Sep 16 10:45:42 2020 +0200
+
+    misc/ enable remote module in renderer process (needed for spectron)
+
+[33mcommit b1affd012c0a7678917a99f50c38e1988bb3c708[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Sep 6 22:57:53 2020 +0200
+
+    misc/ revert electron because spectron cannot handle: electron-userland/spectron#693
+
+[33mcommit d4ce11dc58ae47889cbe798ff5697af237c1d929[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sun Aug 30 15:44:54 2020 +0200
+
+    misc/ ci - remove fast finish option
+
+[33mcommit ac3682d40c26e73389a988b107abe6e5c6a736e6[m[33m ([m[1;33mtag: 8.0.4[m[33m)[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sun Aug 30 15:19:11 2020 +0200
+
+    [Bumped Version] 8.0.4
+
+[33mcommit 2632a2d4125cffb9897a2a847b4504865145367e[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sun Aug 30 14:56:37 2020 +0200
+
+    fix/ travis ci conf
+
+[33mcommit 753f82865353f841a33cc15a5113c0f782620bcc[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Aug 30 14:24:16 2020 +0200
+
+    fix/ ng lint config
+
+[33mcommit b71c514dcc1fd0453905ffc3808a14bf44d910a7[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sun Aug 30 13:57:15 2020 +0200
+
+    misc/ upgrade Electron 10
+
+[33mcommit f41ce65e795545754a98dcfc3b4a80fa8582a5dd[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sun Aug 30 13:13:03 2020 +0200
+
+    misc/ clarify node lib import
+
+[33mcommit 2964fc45a81c0afa95099943e10a8882ab664506[m
+Merge: 0b70270 5cf5e2b
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Mon Aug 24 17:32:22 2020 +0200
+
+    Merge pull request #515 from chenc041/master
+    
+    Update README.md
+
+[33mcommit 5cf5e2bae5172fc91e49f93ec25c720296a4700a[m
+Author: chenc <double_cl@163.com>
+Date:   Sat Aug 22 22:47:14 2020 +0800
+
+    Update README.md
+
+[33mcommit 0b702703e35a8648b13f483233dafff1dd2da3ca[m
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sat Aug 15 17:29:38 2020 +0200
+
+    Update README.md
+
+[33mcommit e3a4e01a0e320a7c1ddd7c70d4b8aa997dcac005[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Aug 15 12:38:59 2020 +0200
+
+    ref/ clean custom webpack target ('electron-renderer' or 'web')
+
+[33mcommit 85aaf86e5714898a5c459684aaee042ab04dade0[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Wed Aug 12 22:43:05 2020 +0200
+
+    fix/ README typo (e2e chapter)
+
+[33mcommit 00ce4108ee19efba127401072c172849704fb2a7[m[33m ([m[1;33mtag: 8.0.3[m[33m)[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Wed Aug 12 22:41:23 2020 +0200
+
+    [Bumped Version] 8.0.3
+
+[33mcommit e3d2fca902e29ed01629249c187c3cdb509000a2[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Wed Aug 12 22:27:08 2020 +0200
+
+    misc/ Upgrade Angular (10.0.9) and Electron (9.2.0)
+
+[33mcommit 472afc867599ae57c34a33dd500df156bee4e628[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Wed Aug 12 22:21:04 2020 +0200
+
+    fix/ e2e tests with Spectron
+
+[33mcommit 84598a5146691a5824dada51da723a22df21c074[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Wed Aug 12 21:09:33 2020 +0200
+
+    [Bumped Version] 8.0.2
+
+[33mcommit 61c5c6b2e472a1998e00a0acbfc615f129b863b5[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Wed Aug 12 21:07:12 2020 +0200
+
+    fix/ require error with nodeIntegration = false
+
+[33mcommit e0327292ceb74678215c68f42e705c0e8159f45f[m[33m ([m[1;33mtag: 8.0.1[m[33m)[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Wed Aug 12 20:52:20 2020 +0200
+
+    [Bumped Version] 8.0.1
+
+[33mcommit a1ef40dd84bb02cbe0a865adb0e3805b14ea6895[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Wed Aug 12 20:51:43 2020 +0200
+
+    misc/ upgrade Angular
+
+[33mcommit 8a73b4af0acc4782b8a81eb78abe28c72cd44377[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Wed Aug 12 20:51:22 2020 +0200
+
+    misc/ remove warinng npm start ( tsconfg.app include key)
+
+[33mcommit 4b17ab64e628459c24b69cb8a82da8dcc09dc501[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Tue Aug 4 08:20:28 2020 +0200
+
+    fix/ eslint on main.ts file
+
+[33mcommit 78a4c9ed3218488894aee50d7e3b9825cde4636a[m[33m ([m[1;33mtag: 8.0.0[m[33m)[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Mon Jul 13 21:05:49 2020 +0200
+
+    [Bumped Version] 8.0.0
+    
+    [Bumped Version] 8.0.0
+
+[33mcommit ebf795268e74c52b887b6f504dcaa7cadc4438e1[m
+Merge: 84f0519 95f3dde
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Mon Jul 13 21:01:39 2020 +0200
+
+    Merge branch 'master' of https://github.com/maximegris/angular-electron
+
+[33mcommit 84f05197a052be1f5df9d641cf75d6c409a14331[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Mon Jul 13 21:00:05 2020 +0200
+
+    ref/ Upgrade to Angular 10.3 & Electron 9.1
+
+[33mcommit 95f3dde6692e743bf7b0a79a289ff504b84f55f2[m
+Merge: 655f795 6ccc4cb
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Mon Jul 13 17:37:59 2020 +0200
+
+    Merge pull request #495 from itreptau/master
+    
+    Fix default styleextension
+
+[33mcommit 6ccc4cbefcc0ce64e02a7ce49582e86e79554d3e[m
+Merge: 655f795 6f5bbc5
+Author: itreptau <itreptau@gmx.net>
+Date:   Tue Jul 7 15:28:47 2020 +0200
+
+    Merge pull request #1 from itreptau/itreptau-patch-1
+    
+    added "style" key to "schematics"
+
+[33mcommit 6f5bbc5d47591a37e40bc34588888f50da47b566[m
+Author: itreptau <itreptau@gmx.net>
+Date:   Tue Jul 7 15:27:26 2020 +0200
+
+    added "style" key to "schematics"
+    
+    Angular CLI version 9 looks at the "style" key instead of "styleext" from schematics.
+
+[33mcommit 2d33b156d4bd3227c0e1f1ca9343391df8de81c9[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sun Jul 5 18:59:40 2020 +0200
+
+    misc/ update README (Angular & Electron version)
+
+[33mcommit 655f795df6cef018aa4f39b1ae2ababdb0906c68[m
+Merge: 087570a 11d0a17
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Wed Jul 1 13:02:39 2020 +0200
+
+    Merge pull request #493 from ineiti/patch-1
+    
+    Update README.md
+
+[33mcommit 11d0a179d5719c38fe4b3eaec266f66d1ee6a28c[m
+Author: Linus Gasser <linus.gasser@epfl.ch>
+Date:   Sun Jun 28 14:53:04 2020 +0200
+
+    Update README.md
+
+[33mcommit 087570ace52ed450e62ce05bc1e43aedf446a023[m
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Jun 21 16:25:21 2020 +0200
+
+    Create FUNDING.yml
+
+[33mcommit cabd11e2263dbd255fba9afe16d462fdd27abd52[m[33m ([m[1;33mtag: 7.2.1[m[33m)[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Jun 20 20:14:06 2020 +0200
+
+    [Bumped Version] 7.2.1
+
+[33mcommit e942747202930663b53ad2aaa5f56e2b65241f4d[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Jun 20 20:09:10 2020 +0200
+
+    ref/ keep only 1 eslint config
+
+[33mcommit a98a84a9e6e57cae2325a98abda4ae746ec83092[m[33m ([m[1;33mtag: 7.2.0[m[33m)[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Jun 20 19:49:50 2020 +0200
+
+    [Bumped Version] 7.2.0
+
+[33mcommit 92d7419bc12dec58227a57603cd1b087adbf74ae[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Jun 20 19:48:08 2020 +0200
+
+    fix/ ng lint with eslint
+
+[33mcommit 21f74017409e0333c3c016fe9c1dc0c22627e504[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Jun 20 17:06:52 2020 +0200
+
+    misc/ upgrade Electron (9.0.4) / Angular (9.1.11)
+
+[33mcommit a8628fc3dd75ad6355c3295edf161eb3e3d48179[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Jun 20 17:06:24 2020 +0200
+
+    ref/ electron remote deprecated
+
+[33mcommit ddd92b3c76bffd13c378c351be608d11a72d65d6[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Jun 20 14:10:29 2020 +0200
+
+    feat/ merge electron-builder npm scripts
+
+[33mcommit 8dffcea40edef5dd1829df67a9524853aea9735f[m[33m ([m[1;33mtag: 7.1.0[m[33m)[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat May 2 16:35:52 2020 +0200
+
+    [Bumped Version] 7.1.0
+
+[33mcommit acc62d9bfed0b6c0e8192ded1cc158b74587ebf4[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat May 2 13:27:48 2020 +0200
+
+    feat/ VSCode : add Debugging config for man process (#465) + Karma
+
+[33mcommit 92eb8ec146be5e0ac452c5127275c9386636e6e0[m
+Merge: 63eed52 273e752
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sat May 2 13:25:17 2020 +0200
+
+    Merge pull request #475 from dorianboulch/patch-1
+    
+    fix/ Karma configuration to debug easily
+
+[33mcommit 273e75200abfffd96d578c0ae8908a167dface80[m
+Author: Dorian Boulc'h <dev.boulchdorian@gmail.com>
+Date:   Sat May 2 00:00:14 2020 +0200
+
+    fix/ Karma configuration to debug easily
+    
+    Keep karma executing in iframe but enable node integration in subframes
+    Specifying the remote debugging port by default to allow intellij to detect the debuging port
+
+[33mcommit 63eed520f2b639a5fae00eac52f00e56cb7a95f5[m[33m ([m[1;33mtag: 7.0.5[m[33m)[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sun Apr 26 09:59:32 2020 +0200
+
+    [Bumped Version] 7.0.5
+
+[33mcommit 00b9d43b84ab8358e6e4105848443e5a59a88fcc[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sun Apr 26 09:58:34 2020 +0200
+
+    Upgrade Angular 9.1.3 & Electron 8.2.3
+
+[33mcommit dbce7a0fbe8d091d7a7ac24bd3756c66a9dde8c2[m[33m ([m[1;33mtag: 7.0.4[m[33m)[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Mon Apr 20 19:18:46 2020 +0200
+
+    [Bumped Version] 7.0.4
+
+[33mcommit 386ce679750ef75c00e21dec8ac9806cd7f61860[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Mon Apr 20 19:17:15 2020 +0200
+
+    ref/ make app reloading/working with and without usehash routing strategy
+
+[33mcommit 0994e6c0b3aab268c5f8ae6cb54f8ed2f312ec36[m
+Merge: 19f6027 4c0c169
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sat Apr 18 16:27:38 2020 +0200
+
+    Merge pull request #468 from bsrinivasguptha/master
+    
+    Transparent background issue fix for Linux
+
+[33mcommit 4c0c1696840d65a1a07a411b03804fadaefab956[m
+Author: Srinivas <bsrinivasguptha@gmail.com>
+Date:   Tue Apr 14 16:52:46 2020 +0530
+
+    Transparent background issue fix for Linux
+
+[33mcommit 19f6027f6027a0ad4b614aaace7af4fda3d61bfd[m[33m ([m[1;33mtag: 7.0.3[m[33m)[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Apr 11 22:13:57 2020 +0200
+
+    misc/ changelog
+
+[33mcommit 62060664c307b991846f1ce393bb5c5ef3978d5a[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Apr 11 22:13:28 2020 +0200
+
+    [Bumped Version] 7.0.3
+
+[33mcommit cf4f172e7882c75c8e387d105ae84ec771c460d4[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Apr 11 22:04:03 2020 +0200
+
+    fix/ polyfills in tsconfig
+
+[33mcommit 67437ba3291b81fff75a0abf6aabca2bc0b0f4cf[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Apr 11 22:00:06 2020 +0200
+
+    misc/ Changelog
+
+[33mcommit c4c36f6c6f41bff23c7a987008d88a9971758ffa[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Apr 11 21:59:18 2020 +0200
+
+    [Bumped Version] 7.0.2
+
+[33mcommit 09fc1f74823d30051a36cda3985d891140c4c06e[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Apr 11 21:58:39 2020 +0200
+
+    misc/ maj eslint dep
+
+[33mcommit 061e01e8ff45396908f1ce27299b26e8e889d2ea[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Apr 11 21:51:09 2020 +0200
+
+    misc/ maj angular 9.1.1 & electron 8.2.1
+
+[33mcommit 7c5c43bad76b34142d77622cb2931d0845271039[m
+Author: Maxime GRIS <mgris@sigma.fr>
+Date:   Sat Apr 11 21:47:57 2020 +0200
+
+    ref/ set allowRendererProcessReuse to true
+
+[33mcommit 40aff44857d791ce67a23b21370c1df28de696c3[m
+Merge: c567b9d 7d6bb69
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sat Apr 11 03:40:32 2020 -0700
+
+    Merge pull request #462 from MrSurana/master
+    
+    moved all app icons to assets/icons folder
+
+[33mcommit c567b9d418611dd98ac30a38768ea4208b083bf0[m
+Merge: 7276d96 86ac910
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sat Apr 11 03:27:30 2020 -0700
+
+    Merge pull request #466 from ombre5733/patch-1
+    
+    Fix a typo in README.md
+
+[33mcommit 86ac910370efbf43c204b141f1b08c02ae38e687[m
+Author: Manuel Freiberger <manuel.freiberger@gmail.com>
+Date:   Tue Apr 7 20:00:29 2020 +0200
+
+    Fix a typo in README.md
+
+[33mcommit 7d6bb69715594ac936955b58b359979b27e5e223[m
+Author: Vaibhav Surana <mrsurana@tabdevelopers.in>
+Date:   Sat Mar 28 23:39:17 2020 +0530
+
+    moved all app icons to assets/icons folder
+
+[33mcommit 7276d967e57381846c89079dfad62188ff4cbaae[m[33m ([m[1;33mtag: 7.0.1[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Feb 22 12:02:43 2020 +0100
+
+    fix/ README dependencies version
+
+[33mcommit 7a84ca02b438a95c51d5c61560d912138768b1bf[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Feb 22 11:57:47 2020 +0100
+
+    [Bumped Version] 7.0.1
+
+[33mcommit 174b36f1ffbc3efbf3f107829537d850e53b47af[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Feb 22 11:49:29 2020 +0100
+
+    misc/ upgrade Angular 9.0.2 & Electron 8.0.1
+
+[33mcommit 8b7ee5b8f037365d62b90aff4dc88bf7b5b6d4dd[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Feb 9 15:16:55 2020 +0100
+
+    ref/ travis test node 10 & 12
+
+[33mcommit 0f304d2af2fca25cc38bfb967fc657ed52b110e0[m[33m ([m[1;33mtag: 7.0.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Feb 9 13:04:20 2020 +0100
+
+    [Bumped Version] 7.0.0
+
+[33mcommit 395d2dafa3d378b23e590e1c456312564e3e7648[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Feb 9 13:03:31 2020 +0100
+
+    fix/ e2e tests
+
+[33mcommit a304034e08123b1a8179d7125a5cbe0743dbcf75[m
+Author: GRIS Maxime <mgris@sigma.fr>
+Date:   Fri Feb 7 14:51:04 2020 +0100
+
+    feat/ update to Angular 9 & Electron 8
+
+[33mcommit 320ce2f676d14bf9a2f78d71eb2f85aa916fb6c3[m
+Author: GRIS Maxime <mgris@sigma.fr>
+Date:   Fri Feb 7 14:04:50 2020 +0100
+
+    ref/ upgrade electron to v8
+
+[33mcommit 7df49ff4b0522a753f97b15dc0ee48770f4422e7[m
+Author: GRIS Maxime <mgris@sigma.fr>
+Date:   Fri Feb 7 13:58:52 2020 +0100
+
+    feat/ update angular 8 deps
+
+[33mcommit 86933c35382e1016e0ae77d652acc528d9be4e69[m
+Merge: aeb3496 ee06695
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Wed Jan 29 15:16:30 2020 +0100
+
+    Merge pull request #430 from WanielDeiss/master
+    
+    cast isElectron to boolean #429
+
+[33mcommit ee0669521d4bc233f4c5a4f7462be81abca87e95[m
+Author: Daniel Weiß <wanieldeiss@gmail.com>
+Date:   Fri Jan 10 06:03:24 2020 +0100
+
+    cast isElectron to boolean #429
+
+[33mcommit aeb349698abad9699f26269f5058655f9310579c[m
+Merge: eb46727 28e1854
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Jan 5 11:44:52 2020 +0100
+
+    Merge pull request #428 from Css-IanM/master
+    
+    hot reload note
+
+[33mcommit 28e1854ef64c2ab23570c8aa1822f4b11d7b7136[m
+Author: Ian Mackie <ian.mackie@kofile.us>
+Date:   Fri Jan 3 16:21:58 2020 -0500
+
+    hot reload note
+
+[33mcommit eb4672733bfccc7b3067aa8cf3900f221a05f5c7[m[33m ([m[1;33mtag: 6.4.1[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Dec 25 13:16:56 2019 +0100
+
+    misc/ maj changelog
+
+[33mcommit 3d76ff53c34725dc931afa0e6c68ae99fa7a386f[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Dec 25 13:16:22 2019 +0100
+
+    feat/ update Electron (7.1.2)
+
+[33mcommit 671b7c92f0be417d61af82f33d86f117483814a4[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Dec 25 13:15:44 2019 +0100
+
+    reef/ update stale bot
+
+[33mcommit 9bf582448a80ef9fdcac42c08e9a173c8b163bed[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Dec 25 13:15:22 2019 +0100
+
+    ref/ remove usunsed files
+
+[33mcommit fac9eef82db540686079fb6c837879858168d184[m[33m ([m[1;33mtag: 6.4.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Tue Nov 19 15:48:08 2019 +0100
+
+    [Bumped Version] 6.4.0
+
+[33mcommit 964b57f2453d2d092929c026f8a20067cb46363e[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Tue Nov 19 15:47:26 2019 +0100
+
+    permissive eslint rules to remove linter warnings
+
+[33mcommit db6c0e4d8b0647724bc28e140189a9119e7417e3[m
+Merge: 868d184 76e7918
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Tue Nov 19 15:23:17 2019 +0100
+
+    Merge pull request #413 from cyluxx/master
+    
+    #412 change selector of WebviewDirective
+
+[33mcommit 868d184a110e1ecbe16e1b3d5afbb4c43ea70fdc[m
+Merge: c43bb6c 0f09907
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Tue Nov 19 15:22:51 2019 +0100
+
+    Merge pull request #411 from cheplv/karma-electron
+    
+    Karma electron
+
+[33mcommit c43bb6c850a946332cf64381b74c9f996e952704[m
+Merge: 9d94f9c 2f64f37
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Tue Nov 19 15:21:05 2019 +0100
+
+    Merge pull request #410 from cheplv/eslint-migration
+    
+    Eslint migration
+
+[33mcommit 76e7918d8aa06b9d8abfc5dccd23d19d25efbdc1[m
+Author: Andreas Plewnia <acplewnia@gmail.com>
+Date:   Tue Nov 19 02:01:28 2019 +0100
+
+    #412 change selector of WebviewDirective
+
+[33mcommit 0f0990739d71548b85d0a797b275f4e72e689bbe[m
+Author: Yuri Cherepanov <jurij.cherepanov@egamings.com>
+Date:   Mon Nov 18 06:10:55 2019 +0200
+
+    karma-electron - remove chrome deps for travis
+
+[33mcommit 21f97fdcb788f4e2df697e372219ac2bd7c69844[m
+Author: Yuri Cherepanov <jurij.cherepanov@egamings.com>
+Date:   Mon Nov 18 06:09:35 2019 +0200
+
+    karma-electron
+
+[33mcommit 2f64f37e885e55cad0aa74020a40d2e50e44c4c2[m
+Author: Yuri Cherepanov <jurij.cherepanov@egamings.com>
+Date:   Mon Nov 18 01:47:30 2019 +0200
+
+    eslint-migration - fix removed translation import
+
+[33mcommit 99e7ec00bf78c936f6cd0c0317e5871d7f58404d[m
+Author: Yuri Cherepanov <jurij.cherepanov@egamings.com>
+Date:   Mon Nov 18 01:24:07 2019 +0200
+
+    eslint-migration - disable warnings/errors
+    
+    Disable warnings and errors on initial code
+    empty functions/require
+    remove transations stub from spec test
+
+[33mcommit 3c1f9f6caaa59d076b083c250ff535f8c70d77fb[m
+Author: Yuri Cherepanov <jurij.cherepanov@egamings.com>
+Date:   Mon Nov 18 00:39:59 2019 +0200
+
+    eslint-migration - remove tslint.json configuration
+
+[33mcommit 7637f459630b0910c07408afdb5b25934704992c[m
+Author: Yuri Cherepanov <jurij.cherepanov@egamings.com>
+Date:   Mon Nov 18 00:26:58 2019 +0200
+
+    eslint-migration
+
+[33mcommit 632c4540564117092d1f196099f59b6e0d3e9fdc[m
+Author: Yuri Cherepanov <jurij.cherepanov@egamings.com>
+Date:   Fri Nov 15 22:45:10 2019 +0200
+
+    require is not defined
+    
+    fix security issue with http local server:
+    https://github.com/electron/electron/blob/master/docs/api/browser-window.md#class-browserwindow
+    
+    beutify dev-web -> web
+    fix tslint.json v5 naming issue
+
+[33mcommit 9d94f9c594d941d7656a5a1bdfefacf87b15cb1f[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Tue Nov 12 13:00:03 2019 +0100
+
+    misc/ add npmrc
+
+[33mcommit d52b03a7dac9c213fc4374632a58ea033fc282d0[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Nov 1 11:59:50 2019 +0100
+
+    misc/ typo README
+
+[33mcommit 39b0bca6e558d3658aaa5a0176c4ca44145f08f2[m[33m ([m[1;33mtag: 6.3.1[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Nov 1 11:44:27 2019 +0100
+
+    changelog
+
+[33mcommit 671b6a38a553e3160dbc307cff9ae734fd0cde67[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Nov 1 11:27:12 2019 +0100
+
+    [Bumped Version]  6.3.1
+
+[33mcommit 595113d0a6bb49e610f18e92cedb293656de8432[m
+Merge: 93d5a8c c4b2cb6
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Fri Nov 1 11:23:53 2019 +0100
+
+    Merge pull request #403 from cheplv/master
+    
+    #395 - require is not defined
+    Awesome job @cheplv . Thanks a lot ! :)
+
+[33mcommit c4b2cb6733cd8417c65526c8219538d55348f168[m
+Author: Yuri Cherepanov <jurij.cherepanov@egamings.com>
+Date:   Tue Oct 29 13:49:15 2019 +0200
+
+    #395 - require is not defined
+    
+    Add support for @angular-builders/custom-webpack
+    Setup environment target based on env params
+    Remove direct code changeing scripts postinstall/postinstall-web
+
+[33mcommit 93d5a8caea1d215c0305e9cac9ee7ee4c621df0c[m[33m ([m[1;33mtag: 6.3.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Oct 25 12:12:01 2019 +0200
+
+    misc/ remove link to dependenciesci
+
+[33mcommit 6a4e2de4a0ec1bcabfbf35252e5ed816142c8381[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Oct 25 12:10:41 2019 +0200
+
+    misc/ change Electron version to 7.0.0 in README
+
+[33mcommit 09f96465c3eda875fa91795a106f8178c92baa3c[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Oct 25 12:08:46 2019 +0200
+
+    [Bumped Version] 6.3.0
+
+[33mcommit d7323409d52eabda7a570551fe64d4d09f42e9c2[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Oct 25 12:07:16 2019 +0200
+
+    misc/ upgrade Electron 7
+
+[33mcommit bc4c950b7e56c14a5f290bb8753d92405e78f131[m[33m ([m[1;33mtag: 6.2.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Sep 29 11:51:19 2019 +0200
+
+    Maj Changelog
+
+[33mcommit 8838e0e32f09c7e8c8980fe7f8e797e6eeaa4acf[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Sep 29 11:50:14 2019 +0200
+
+    [Bumped Version] 6.2.0
+
+[33mcommit 398bdf11828991ce8d6bca317166d167fd2b5109[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Sep 29 11:49:39 2019 +0200
+
+    misc/ add Stale to close unactive issues
+
+[33mcommit 2ecda630ce44b07365cda529957c9def161a7280[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Sep 29 11:49:11 2019 +0200
+
+    Upgrade Angular 8.2.8 & Electron 6.0.10
+
+[33mcommit b47c59415f1e7fc504ed1571a0e6b32be5b57b28[m[33m ([m[1;33mtag: 6.1.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Thu Aug 15 11:20:23 2019 +0200
+
+    [Bumped Version] 6.1.0
+
+[33mcommit 6e2211fbe1e71f1f5f5282968124837306b91b99[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Thu Aug 15 11:08:21 2019 +0200
+
+    misc/ upgrade Angular 8.2 / Spectron 7
+
+[33mcommit a2c17190dc96e3d2d9e575c9ae7aaa9a68b1f830[m
+Merge: f986a0a bd51f28
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Thu Aug 15 10:43:00 2019 +0200
+
+    Merge pull request #371 from jczacharia/master
+    
+    Update to Electron 6 and other Dependencies
+
+[33mcommit bd51f289395bc2b948af74254b036c5e422463e6[m
+Author: Jeremy Zacharia <30392170+jczacharia@users.noreply.github.com>
+Date:   Wed Aug 7 15:56:00 2019 -0400
+
+    Update dependencies
+
+[33mcommit 1aef350922d323025d16cff5d5143f5eeb09cffb[m
+Author: Jeremy Zacharia <30392170+jczacharia@users.noreply.github.com>
+Date:   Wed Aug 7 15:52:16 2019 -0400
+
+    Electron 6.0.0
+
+[33mcommit f986a0acbe237fb720134813ca4e4942bcfcb17c[m
+Merge: 956381c a284c23
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Mon Jul 29 19:28:47 2019 +0200
+
+    Merge pull request #349 from arunredhu/master
+    
+    Angular src restructured as modular
+
+[33mcommit a284c23e1636c086846b144f95ba3f681b7feb16[m
+Author: Arun Redhu <arun.redhu05@gmail.com>
+Date:   Mon Jul 29 08:49:55 2019 +0530
+
+    [UPDATE]: Typescript version fixes
+
+[33mcommit 88056d6b74a8a14318ceee45955ddba6cc527bf4[m
+Author: Arun Redhu <arun.redhu05@gmail.com>
+Date:   Mon Jul 29 08:28:44 2019 +0530
+
+    Corejs path updates
+    Background image url fixes
+
+[33mcommit becc9b4104091e9a431d7f28a02973b49f3304ec[m
+Author: Arun Redhu <arun.redhu05@gmail.com>
+Date:   Sun Jul 28 19:14:05 2019 +0530
+
+    [DELETE]: vscode settings removed
+
+[33mcommit 598370377a6e28d91f428208f88d180c694786ba[m
+Author: Arun Redhu <arun.redhu05@gmail.com>
+Date:   Tue Jun 11 00:15:05 2019 +0530
+
+    Angular src restructured as modular as per angular official guidelines, .travis.yml support added for node 12
+
+[33mcommit 956381cd7487306f67a534e06098d21af299d09d[m
+Merge: acf0d4f 096e7a9
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Jun 2 16:45:12 2019 +0200
+
+    Merge pull request #337 from whyboris/codelyzer-bump
+    
+    bump tslint & codelyzer versions, update tslint rules & alphabetize
+
+[33mcommit 096e7a95bf26401b99db94242abad277ef5af967[m
+Merge: 8425cdc acf0d4f
+Author: whyboris <byakubchik@forbes.com>
+Date:   Sun Jun 2 22:39:41 2019 +0900
+
+    alphabetized and formatted
+
+[33mcommit acf0d4f657a8ed15a8ad7ee68b9f80afbe3f53f8[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 31 20:51:08 2019 +0200
+
+    fix/ Version Electron in README
+
+[33mcommit 4f9cef3201dee49170c8852a4289d94fa998f7c8[m[33m ([m[1;33mtag: 6.0.1[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 31 18:02:39 2019 +0200
+
+    [Bumped Version] 6.0.1
+
+[33mcommit 5a24b563b58a75c93cca96656290f8432723754b[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 31 18:00:44 2019 +0200
+
+    ref/ strict version build-angular & zonejs
+
+[33mcommit 6ede0c8ae79f343730385444f9ed3718c3e6a1e9[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 31 17:59:16 2019 +0200
+
+    ref/ strict version codelyzer
+
+[33mcommit 11ccc6b9b9501e433dc44edfd99c3b7bbcd41bad[m
+Merge: fb719ab ccbf6cd
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Fri May 31 17:57:24 2019 +0200
+
+    Merge pull request #305 from TomoyukiAota/feature/travisci-macos
+    
+    Run CI for macOS/Ubuntu and Node.js version 10/11
+
+[33mcommit fb719ab6f8d8fd47c5a8be0bfaa5ca89363d26cd[m[33m ([m[1;33mtag: 6.0.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 31 17:45:14 2019 +0200
+
+    [Bumped Version] 6.0.0
+
+[33mcommit 92334cf3a02456c027a45899d8e3e7263dc210e6[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 31 17:43:06 2019 +0200
+
+    ref/ upgrade Angular 8 and Electron 5
+
+[33mcommit ccbf6cd92fd41c867a649adb4a4c1b176cb37a53[m
+Author: Tomoyuki Aota <tomoyukia@gmail.com>
+Date:   Wed May 8 21:21:48 2019 +0900
+
+    Remove Node.js v12.
+
+[33mcommit 4db31e3796522e00a177e6391dd79cf7097c4987[m
+Author: Tomoyuki Aota <tomoyukia@gmail.com>
+Date:   Wed May 8 20:59:42 2019 +0900
+
+    Use service xvfb.
+
+[33mcommit cc80f7f3739c12b1df7937e3efe34fd21eee3e3d[m
+Merge: 2538965 bef886b
+Author: Tomoyuki Aota <tomoyukia@gmail.com>
+Date:   Wed May 8 20:51:28 2019 +0900
+
+    Merge branch 'master' into feature/travisci-macos
+
+[33mcommit 8425cdc8d329b00e558fdd04f75c902eb089386f[m
+Author: whyboris <byakubchik@forbes.com>
+Date:   Wed May 8 18:40:47 2019 +0900
+
+    bump tslint & codelyzer versions, update tslint rules & alphabetize
+
+[33mcommit bef886be89155a5396df9b44a299f98733b7f5d7[m
+Merge: 7d0f33c e0ff557
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Tue Apr 16 11:41:13 2019 +0200
+
+    Merge pull request #328 from FrancescoBorzi/update-travis
+    
+    feat(CI): update Ubuntu and Node versions in Travis
+
+[33mcommit 7d0f33c65a300d22e337a5a5bd4ee9cda7a19f21[m
+Merge: 80db2e2 a2971bf
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Tue Apr 16 11:40:59 2019 +0200
+
+    Merge pull request #327 from FrancescoBorzi/e2e-test-mocha-type
+    
+    fix(e2e): add mocha types
+
+[33mcommit e0ff5570cd3c29b29ab63341424843ea60ea394e[m
+Author: FrancescoBorzi <borzifrancesco@gmail.com>
+Date:   Sun Apr 14 13:33:08 2019 +0200
+
+    feat(CI): update Ubuntu and Node versions in Travis
+
+[33mcommit a2971bf203d6337663418b13c9fa93f94ed08d15[m
+Author: FrancescoBorzi <borzifrancesco@gmail.com>
+Date:   Sun Apr 14 13:04:44 2019 +0200
+
+    fix: type conflicts
+
+[33mcommit 20e1e892c0d81bab572f319ba3a5eff1315bb1d7[m
+Author: FrancescoBorzi <borzifrancesco@gmail.com>
+Date:   Sun Apr 14 12:25:12 2019 +0200
+
+    fix(e2e): add mocha types
+
+[33mcommit 80db2e2c9c48e9f69e97693563e8132b15fb9386[m
+Merge: 915b263 87d0483
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Mar 3 12:07:41 2019 +0100
+
+    Merge pull request #317 from artemv/spectron
+    
+    chore: Spectron for e2e tests
+
+[33mcommit 87d0483cabe3fec6eb9efcf57eb2a49efcd3d2f3[m
+Merge: 2581983 915b263
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sat Mar 2 20:32:10 2019 +0100
+
+    Merge branch 'master' into spectron
+
+[33mcommit 915b263e763f903f7e3befc3f9dc8047c58e35f9[m
+Merge: 811476c 07a5786
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sat Mar 2 20:29:05 2019 +0100
+
+    Merge pull request #313 from tla-dev/master
+    
+    update versions and prepare for electron 5
+
+[33mcommit 811476ce8d284b4dd9e783fb2116b354d306f3de[m
+Merge: 3b9b808 10aaa4c
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sat Mar 2 20:28:16 2019 +0100
+
+    Merge pull request #304 from TomoyukiAota/feature/fix-travisci-link
+    
+    Fix Travis CI Link for CI Status Badge.
+
+[33mcommit 258198393d859ec0950f431b85bb348acab1acf7[m
+Author: Artem Vasiliev <artem.job@gmail.com>
+Date:   Fri Mar 1 15:39:15 2019 +0300
+
+    fix(e2e): without devTools
+    
+    according to https://github.com/electron/spectron/issues/174#issuecomment-319242097 this might help re error like in https://travis-ci.org/artemv/angular-electron-spectron/builds/500315009
+    
+    ..but this also could be node version dependent as I don't have it locally on MacOS & Node 9
+
+[33mcommit 901438aab4612b0dd34038609ca582b459184321[m
+Author: Artem Vasiliev <artem.job@gmail.com>
+Date:   Fri Mar 1 15:07:37 2019 +0300
+
+    chore: Spectron for e2e tests
+
+[33mcommit 07a5786dcc1a2443e189686da7e163d23941bd6e[m
+Author: Thibaut Lassalle <thibaut.lassalle@bullhorn.com>
+Date:   Wed Feb 27 16:44:01 2019 -0500
+
+    update versions and prepare for electron 5
+
+[33mcommit 3b9b80822fb04a9261c48ec1fa3d9d8e035b51e1[m
+Merge: d05323a 7599320
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Feb 17 21:31:03 2019 +0100
+
+    Merge pull request #303 from TomoyukiAota/feature/update-gitignore
+    
+    Not gitignore src/karma.conf.js
+
+[33mcommit d05323aa2b795869c786294a56713a4d531f042c[m
+Merge: 7618abc 7a564a0
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Feb 17 21:30:36 2019 +0100
+
+    Merge pull request #300 from tla-dev/master
+    
+    bump angular version
+
+[33mcommit 2538965dca45bff58cc6093e5aad286e0798b329[m
+Author: Tomoyuki Aota <tomoyukia@gmail.com>
+Date:   Sat Jan 26 23:34:23 2019 +0900
+
+    Run CI for Node.js version 10
+
+[33mcommit 3ba02e3b6763b6cadb6ba2fe1e5ac10a08118439[m
+Author: Tomoyuki Aota <tomoyukia@gmail.com>
+Date:   Sat Jan 26 23:28:05 2019 +0900
+
+    Add CI for macOS.
+
+[33mcommit 10aaa4c9b6b10736c7e830fd7be663ad4e55067f[m
+Author: Tomoyuki Aota <tomoyukia@gmail.com>
+Date:   Sat Jan 26 02:23:10 2019 +0900
+
+    Fix Travis CI link
+
+[33mcommit 75993207acbac3506a313e135a7adffa8173db44[m
+Author: Tomoyuki Aota <tomoyukia@gmail.com>
+Date:   Sat Jan 26 00:57:07 2019 +0900
+
+    Not gitignore src/karma.conf.js
+
+[33mcommit 7a564a02c549f9b1b35151c03b55b4834fc0e9ab[m
+Author: teebo <thibaut.lassalle@gmail.com>
+Date:   Tue Jan 15 06:15:42 2019 -0500
+
+    bump angular version
+
+[33mcommit 7618abcea496a26656be11f31542713b728919e9[m
+Merge: b790e12 bb1d6bb
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Dec 30 21:33:01 2018 +0100
+
+    Merge pull request #296 from whyboris/version-bump
+    
+    Version Bump Electron 4
+
+[33mcommit bb1d6bbb50867bd36d86a44339f42f7351eccc06[m
+Author: whyboris <yboris@yahoo.com>
+Date:   Sun Dec 30 11:52:22 2018 -0500
+
+    version bump
+
+[33mcommit b790e126ae4bbcef60185ddacb410f8737d28c0d[m[33m ([m[1;33mtag: 5.1.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Nov 30 22:52:40 2018 +0100
+
+    [Bumped Version] 5.1.0
+
+[33mcommit 45bab44fa220796b4d691320f7e2ffdbbae0b137[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Nov 30 22:49:43 2018 +0100
+
+    fix/ typo script npm electron:windows
+
+[33mcommit 41aeb57a3102328c9e224faa071cb485d7eb5058[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Nov 30 22:49:07 2018 +0100
+
+    ref/ remve npx - fix vulnerabilities
+
+[33mcommit fde371f5ae958db3b042388d8f40b675d424cf3c[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Nov 30 22:48:47 2018 +0100
+
+    fix/ typo Angular 7
+
+[33mcommit 723233c175d8b78d056374eab2af529dbc49e07e[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Nov 11 12:40:49 2018 +0100
+
+    fix/ typo README
+
+[33mcommit f146d5def1f390abd395355686cefc452d95c6db[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Nov 11 12:37:26 2018 +0100
+
+    update README
+
+[33mcommit a89b3ce4a6516d0476cc9ac77e0968c97a46ad8a[m[33m ([m[1;33mtag: 5.0.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Nov 11 12:22:56 2018 +0100
+
+    ref/ Generate changelog
+
+[33mcommit 315a79b1827e126d8feefd3aa96c14d5eeb02e18[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Nov 11 12:21:30 2018 +0100
+
+    ref/ Upgrade to Angular 7
+
+[33mcommit 198da428c3f07cc4ae7d8bf4b15eb55afcd18e01[m[33m ([m[1;33mtag: 4.3.0[m[33m)[m
+Merge: 53c97cb 0440ee9
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Fri Oct 26 15:50:09 2018 +0200
+
+    Merge pull request #257 from bampakoa/docs
+    
+    Fix typos in README
+
+[33mcommit 53c97cb271dd690cb3fef90162fd25f65a2996d5[m
+Merge: d76e880 f083328
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Fri Oct 26 15:49:53 2018 +0200
+
+    Merge pull request #256 from nakeawvichit/master
+    
+    Update Version Electron 2 to 3 #hacktoberfest
+
+[33mcommit d76e880bc82da38a45c79b2e3a0577d6f55df955[m
+Merge: 9106c8f 82c7bcf
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Fri Oct 26 15:49:37 2018 +0200
+
+    Merge pull request #240 from louich/master
+    
+    Update electron-builder.json files rule
+
+[33mcommit 0440ee94e8f2ec057e8a719c77c884120bdbd740[m
+Author: Aristeidis Bampakos <bampakoa@gmail.com>
+Date:   Thu Oct 4 18:23:32 2018 +0300
+
+    Fix typos in README file
+
+[33mcommit f083328bb7825d1a7bf02494238819aa30d92c8d[m
+Author: nakeawvichit <tkeawvichit@gmail.com>
+Date:   Thu Oct 4 01:09:46 2018 +0700
+
+    Update Version Electron 2 to 3 #hacktoberfest
+
+[33mcommit 82c7bcfc575af9a2ba5a4e9d6a0bb49cc22c906e[m
+Author: louich <louischarles.martin@gmail.com>
+Date:   Thu Aug 23 15:36:26 2018 -0400
+
+    Update electron-builder.json files rule
+    
+    - ".angular-cli.json" has been renamed in Angular 6 for "angular.json"
+    - Found out that some nested typscript files were still bundled
+
+[33mcommit 9106c8fa4fa874e2fdfc8a5e6ecf2479ffd09828[m[33m ([m[1;33mtag: 4.2.2[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Aug 22 12:16:59 2018 +0200
+
+    fix/ build serve & electron with single tsc command
+
+[33mcommit a9448aa1acd4a59c9f72ef78fcd04633b2a252f4[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Aug 22 10:29:18 2018 +0200
+
+    fix/ typo README
+
+[33mcommit ef33f5ed16d19671553368e6ea50dd8632817ae1[m[33m ([m[1;33mtag: 4.2.1[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Aug 22 10:25:26 2018 +0200
+
+    fix/ jslib in main process error
+
+[33mcommit d8818c18c0d9437385e4daa878b94254b09453e6[m[33m ([m[1;33mtag: 4.2.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Aug 19 15:06:09 2018 +0200
+
+    Upgrade Angular (6.1.2) deps
+
+[33mcommit 1adad4a6abba263fb153f6f947c0c872a098849f[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Aug 19 15:05:50 2018 +0200
+
+    ref/ remove some directories of tsconfig.app.json
+
+[33mcommit f4535e54b2cc7fa6354b5c8e0f28befbc0dd4cb0[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Aug 19 14:12:51 2018 +0200
+
+    fix/ electron builder output directories #200
+
+[33mcommit 0da3856b61e483b395f3cbbdf0176f815fc32a1b[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Aug 19 14:11:28 2018 +0200
+
+    [Bumped Version] V4.2.0
+
+[33mcommit bb5a2984e9fdb928a0f2857672b266cbd1f6e220[m
+Merge: 63a41b8 961c8b1
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Aug 19 14:13:11 2018 +0200
+
+    Merge pull request #214 from eggachecat/master
+    
+    Make sure tsconfig be used.
+
+[33mcommit 961c8b14e34fee6fa03924110784eec73f272230[m
+Author: sunao <sunao_0626@hotmail.com>
+Date:   Thu Jul 12 22:47:14 2018 +0800
+
+    Make sure tsconfig be used.
+
+[33mcommit 63a41b8450c41ca5129b76e0bc27ce470d94ff80[m[33m ([m[1;33mtag: 4.1.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Jun 27 22:24:09 2018 +0200
+
+    fix/ version angular (revert 6.0.6 -> 6.0.5)
+
+[33mcommit 0d8341ae86e4dbe6f3fa1678c830a6dae9642623[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Jun 27 22:22:46 2018 +0200
+
+    fix/ version ts-node
+
+[33mcommit 50657d01265ec5c9dddc957e3d3e5288b1220753[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Jun 27 22:09:53 2018 +0200
+
+    ref/ postinstall web & electron
+
+[33mcommit 1c403a80fad3be355ed99d924f4d8601a34aa117[m
+Merge: 165c50a ec705ee
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Wed Jun 27 20:57:34 2018 +0200
+
+    Merge pull request #202 from flowfire/master
+    
+    Allow Angular Using Electron Modules
+
+[33mcommit 165c50a1e964718cbde9881db230a134194438eb[m
+Merge: 1d48e32 01842e2
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Wed Jun 27 20:57:22 2018 +0200
+
+    Merge pull request #198 from JiaLiPassion/zone-patch
+    
+    feat(zone): add zone-patch-electron to patch Electron native APIs in polyfills.
+
+[33mcommit ec705ee30170a5edd21b3cfba4e3dd50a94d40df[m
+Author: 孟子易 <mengziyi540841@gmail.com>
+Date:   Tue Jun 26 20:23:27 2018 +0800
+
+    Allow Angular Using Electron Modules
+
+[33mcommit 01842e27948cfa8a94ba5c093a75bb020b2c59f6[m
+Author: JiaLi.Passion <JiaLi.Passion@gmail.com>
+Date:   Wed Jun 13 18:08:06 2018 +0900
+
+    feat(zone): add zone-patch-electron to patch Electron native APIs in polyfills
+
+[33mcommit 1d48e32c73aed91b8a7cb6ad2329ffb9800b25a9[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 25 12:41:12 2018 +0200
+
+    update README
+
+[33mcommit b7581223e8132547386a2f873ac775ba70821860[m[33m ([m[1;33mtag: 4.0.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 25 12:20:14 2018 +0200
+
+    misc/ update Changelog
+
+[33mcommit e7fac6ed1f415ef9c20439c9f0eac2bed0dc7766[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 25 12:18:33 2018 +0200
+
+    ref/ upgrade angular to 6.0.3
+
+[33mcommit a7e33b646f3c01e0c3f342c39775f884e8391ac7[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 25 11:49:03 2018 +0200
+
+    misc/ remove unused packages
+
+[33mcommit 16f5b251d27eaf3d4e9fc4a19e5cb43646a79720[m
+Merge: 70b359f beea806
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Fri May 25 11:04:01 2018 +0200
+
+    Merge pull request #182 from leo6104/ngv6
+    
+    Update to NodeJS 8, Angular 6, electron 2.0.2, RxJS 6.1
+
+[33mcommit 70b359f1183efb0c5397364dc316af72f6948ef9[m[33m ([m[1;33mtag: 3.4.1[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 25 10:56:26 2018 +0200
+
+    misc/ update changelog
+
+[33mcommit 308ea9c014781aa65c712ea69a844e77c8e651ef[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 25 10:55:30 2018 +0200
+
+    version 3.4.1
+
+[33mcommit e98702dd74b8da69b193966c06a1cb1d20accfc4[m
+Merge: 7d5eeb3 0cf6899
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Fri May 25 10:54:00 2018 +0200
+
+    Merge pull request #190 from hervehobbes/master
+    
+    Modify electron builder configuration to remove source code and tests
+
+[33mcommit beea8067b95d13c0b860f3f3599edb1be7f0e30e[m
+Merge: f19e6ee 7d5eeb3
+Author: Heo Sangmin <heo@mapiacompany.com>
+Date:   Fri May 25 17:53:39 2018 +0900
+
+    chore: merge with upstream/master
+
+[33mcommit 7d5eeb34f70648af92948076239c0ec03ca7878d[m[33m ([m[1;33mtag: 3.4.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 25 10:46:21 2018 +0200
+
+    misc/ update changelog
+
+[33mcommit 6dc97a1ea857b48a7a111768f58498c91a3572b5[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 25 10:40:15 2018 +0200
+
+    ref/ remove contributors
+
+[33mcommit 06d6b0f8c5de703a9c7f5dcfc880a9673aa6eec8[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 25 10:38:53 2018 +0200
+
+    version 3.4.0
+
+[33mcommit edd0fdaf216386101b7ad45f5357862b3b95edb8[m
+Merge: cb33a80 35354b1
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Fri May 25 10:36:30 2018 +0200
+
+    Merge pull request #186 from creadicted/patch-2
+    
+    Resolved Translation issue
+
+[33mcommit cb33a8089802e4ea963d5b6db3608be1441cf859[m
+Merge: a8c2b63 05c9e39
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Fri May 25 10:35:49 2018 +0200
+
+    Merge pull request #185 from creadicted/patch-1
+    
+    Removed unused file
+
+[33mcommit 0cf6899a1d0d1324f32b2874b7d65d90b1112ca7[m
+Author: Herve Thouzard <herve.thouzard@gmail.com>
+Date:   Thu May 24 17:23:30 2018 +0200
+
+    Modify electron builder configuration to remove source code and tests
+
+[33mcommit f19e6ee7131d43fd1b5da1a45f39a1833259236e[m
+Author: Heo Sangmin <heo@mapiacompany.com>
+Date:   Thu May 24 02:14:40 2018 +0900
+
+    refactor: update electron, electron-builder to latest (2.0.2, 20.14.7)
+
+[33mcommit 35354b1025d98fd14d0566d3aa3112bb9c36fc91[m
+Author: Konrad Koch <hello@creadicted.com>
+Date:   Mon May 21 08:46:41 2018 +0200
+
+    Translation issue
+    
+    Removed french description and translated them to english
+
+[33mcommit 05c9e399a778fcf1009dd81410f4213f7665dd6c[m
+Author: Konrad Koch <hello@creadicted.com>
+Date:   Mon May 21 08:44:08 2018 +0200
+
+    The file is unused
+    
+    The file is replaced with the propper app.config.ts file in the same folder
+
+[33mcommit c940037211e88e5fff1a911ab0188a5db51cdb6b[m
+Author: Heo Sangmin <heo@mapiacompany.com>
+Date:   Sat May 19 18:55:27 2018 +0900
+
+    refactor(hooks): replace hooks to ng-cli fileReplacements logic
+
+[33mcommit 7fbc68cd1fa65bb129f5b894c9e7976375ae6a80[m
+Author: Heo Sangmin <heo@mapiacompany.com>
+Date:   Sat May 19 16:38:21 2018 +0900
+
+    fix(test): create polyfills-test.ts for karma test & setup Travis CI
+
+[33mcommit be48531517097115db1eca13c1b7069375f7dbdd[m
+Author: Heo Sangmin <heo@mapiacompany.com>
+Date:   Sat May 19 02:39:28 2018 +0900
+
+    fix(travis): set progress to false (speed up npm)
+
+[33mcommit e37efdb9f300ea4a703f9979f4e37cc160a73bb0[m
+Author: Heo Sangmin <heo@mapiacompany.com>
+Date:   Sat May 19 02:16:39 2018 +0900
+
+    refactor: upgrade to NodeJS 8, Angular 6, CLI 6, Electron 2.0, RxJS 6.1
+
+[33mcommit a8c2b63e276e87e77b0890109feabaaf815a0ef7[m[33m ([m[1;33mtag: 3.3.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Sun Apr 15 19:55:02 2018 +0200
+
+    fix/ typo README.md (production variables)
+
+[33mcommit ddfbbf9db2cef41cdcc82fc3390f36a12a7b372d[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Sun Apr 15 13:09:28 2018 +0200
+
+    version 3.3.0 changelog
+
+[33mcommit a88bda66d83690b1064bcb11a0cb1bb893894caf[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Sun Apr 15 13:08:19 2018 +0200
+
+    version 3.3.0
+
+[33mcommit 71083f12bf1e20225769af20a8a054ab8af4a6f9[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Sun Apr 15 13:06:46 2018 +0200
+
+    add Changelog file
+
+[33mcommit 8dc69fa648dd26b74915701f80ba2bd2e3fc0bc3[m[33m ([m[1;33mtag: 3.2.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Sun Apr 15 12:51:41 2018 +0200
+
+    version 3.2.0
+
+[33mcommit e3ad12dd59f967c2e550131517afa7e5ea0d3389[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Sun Apr 15 12:51:30 2018 +0200
+
+    ref/ add node/electron module import as exemple : fs and remote
+
+[33mcommit 54a3d6ce4b9e68b6cb1ff619db9d99ed416a3198[m
+Merge: 77374dc fccf348
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Apr 15 11:49:13 2018 +0200
+
+    Merge pull request #165 from seopei/improve-e2e-test-execution
+    
+    Terminate the npm process after test execution
+
+[33mcommit 77374dca28823053a8647cc1afece8ad597628e6[m
+Merge: 84ade81 9af5138
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Apr 15 11:48:19 2018 +0200
+
+    Merge pull request #164 from seopei/update-deps
+    
+    Update dependencies
+
+[33mcommit 84ade816e08ced82e1f7ede7394222eb58328008[m
+Merge: 5f0abdb 8046b2a
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Apr 15 11:47:31 2018 +0200
+
+    Merge pull request #161 from piemasters/master
+    
+    fix/ app e2e spec
+
+[33mcommit 5f0abdb796c69987bac87dfc18138ecd3c142fe0[m
+Merge: 05a2500 6bd044e
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Apr 15 11:47:00 2018 +0200
+
+    Merge pull request #162 from whyboris/webFrame
+    
+    provide webFrame access
+
+[33mcommit 9af5138778c40e08a929322801be217c6d3a3f98[m
+Author: seopei <sebastian.peischl@cnc.io>
+Date:   Tue Apr 10 13:09:44 2018 +0200
+
+    remove copyfiles
+
+[33mcommit fccf348abb323d15043be0dc9fdad136e80fc1a4[m
+Author: Sebastian Peischl <sebastian.peischl@cnc.io>
+Date:   Mon Apr 9 21:29:11 2018 +0200
+
+    fix e2e tests based on PR #161 and terminate the npm process after test execution
+
+[33mcommit 89963ab996a9d96d2f611959fd0a3eb8f35a64ba[m
+Author: Sebastian Peischl <sebastian.peischl@cnc.io>
+Date:   Mon Apr 9 21:17:31 2018 +0200
+
+    update dependencies
+
+[33mcommit 6bd044e4597dc5099819ac1a495c5b88f1fe6de9[m
+Author: whyboris <byakubchik@forbes.com>
+Date:   Sat Apr 7 14:24:39 2018 -0400
+
+    provide webFrame access
+
+[33mcommit 8046b2a1a12e0740e1283ad7f12c930965726c3b[m
+Author: David <david.norton@cgi.com>
+Date:   Wed Apr 4 13:37:51 2018 +0100
+
+    fix/ app e2e spec
+
+[33mcommit 05a25004a529cb56133c78f2e0a98c8ea58f5d9a[m
+Merge: f7c71e7 d78203f
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Fri Mar 23 23:28:29 2018 +0100
+
+    Merge pull request #153 from shaljain/master
+    
+    Including electron to eliminate Electron not found err sg
+
+[33mcommit d78203f76029069a25285741171487d3a2f4c361[m
+Author: Shal Jain <sjain@knectiq.com>
+Date:   Fri Mar 23 11:41:35 2018 -0500
+
+    Including electron to eliminate Electron not found err sg
+
+[33mcommit f7c71e78a0e72ec9bc7fcc20765b3626b13d4af5[m[33m ([m[1;33mtag: 3.1.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Thu Mar 15 13:35:21 2018 +0100
+
+    version 3.1.0
+
+[33mcommit 5590d1b793e8fa7adc5dbe10d7695a4438e3a29a[m
+Merge: 4c51e19 448d68b
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Thu Mar 15 13:35:30 2018 +0100
+
+    Merge pull request #145 from OliverLonghi/patch-1
+    
+    Fix to change environment
+
+[33mcommit 448d68b747aa0b2e6b979cd4838c37a0baf235b9[m
+Author: OliverLonghi <gulliva@gmail.com>
+Date:   Tue Mar 13 12:52:26 2018 -0300
+
+    Fix to change environment
+    
+    It was always building production environment despite using `cross-env ENV=dev` preapended to `npm start` (at least at windows).
+
+[33mcommit 4c51e192be07af4068546217b4a8b7d08e3044b8[m
+Merge: 5258ff1 72aff8d
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Thu Mar 8 20:28:53 2018 +0100
+
+    Merge pull request #141 from hervehobbes/master
+    
+    Added option -o to script npm run ng:serve so that it really open the browser
+
+[33mcommit 72aff8d1869bcd209948a44e49984f7307c77f43[m
+Author: Hervé Thouzard <herve.t@springcard.com>
+Date:   Thu Mar 8 14:13:10 2018 +0100
+
+    Added option -o to script npm run ng:serve so that it really open the browser
+
+[33mcommit 5258ff173b784d50fe6f1faefe10a36ce9525dd8[m[33m ([m[1;33mtag: 3.0.1[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Wed Mar 7 13:07:54 2018 +0100
+
+    version 3.0.1
+
+[33mcommit 22699efd6a5acc6c30ae1b2713228192af4d523a[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Wed Mar 7 13:07:31 2018 +0100
+
+    fix/ icon app
+
+[33mcommit 7863aa97d2fa37e7d1e0ef66a29ed95876e49260[m[33m ([m[1;33mtag: 3.0.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Sun Feb 25 22:15:09 2018 +0100
+
+    fix/ TranslateModule test
+
+[33mcommit ce5724c11f8fa3d79aeb927c305d031ae09c8845[m
+Merge: 67ab31c 16d2548
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Sun Feb 25 22:12:16 2018 +0100
+
+    merge conflict
+
+[33mcommit 67ab31c458c572de0311f27ee8a7d7bc43765999[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Sun Feb 25 22:01:57 2018 +0100
+
+    Ng not ejected anymore
+
+[33mcommit 16d2548b9942751efc5ad2a670baba7a11b4b1aa[m
+Merge: 1ae6f7a 0558d6a
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Wed Feb 21 10:29:41 2018 +0100
+
+    Merge pull request #129 from seopei/update-deps
+    
+    Updated dependencies and fixed unit tests
+
+[33mcommit 0558d6a5faefcd0e3066b484e2e5bff55d6a368d[m
+Author: Sebastian Peischl <sebastian.peischl@cnc.io>
+Date:   Tue Feb 20 14:55:14 2018 +0100
+
+    pin all dependency versions
+
+[33mcommit 4d3ca6e1b1fc46dea6b7d5e6a7dc09ea5d8d4d44[m
+Author: Sebastian Peischl <sebastian.peischl@cnc.io>
+Date:   Mon Feb 19 21:12:37 2018 +0100
+
+    update dependencies and fix unit tests
+
+[33mcommit 1ae6f7aedca7f099688bfce84a050f6ae014b995[m[33m ([m[1;33mtag: 2.7.1[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Thu Feb 15 10:21:54 2018 +0100
+
+    version 2.7.1
+
+[33mcommit 3df81589404dd199efa3f75a1229f54bcc0f1890[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Thu Feb 15 10:21:00 2018 +0100
+
+    ref/ dernière version cli
+
+[33mcommit e3b1fabba35b1efa5c10156b423dcbb1515860b6[m[33m ([m[1;33mtag: 2.7.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Thu Feb 15 10:04:15 2018 +0100
+
+    ref/ update angular & dep
+
+[33mcommit 9cef6a81fb1a90f501724a264ad0e4f8ec374267[m
+Merge: f3bc99a 6d21e69
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Thu Feb 15 09:33:56 2018 +0100
+
+    Merge pull request #121 from mo2menelzeiny/master
+    
+    fix: fixes maximegris/angular-electron#118
+
+[33mcommit 6d21e69b6b09f45afa7dff76eed95951860768f4[m
+Author: Mo'men El-Zeiny <mo2menelzeiny@gmail.com>
+Date:   Wed Jan 31 22:12:42 2018 +0200
+
+    fix: fixes maximegris/angular-electron#118
+
+[33mcommit f3bc99adb16129e3fef41f5f089cabb59dd0fe54[m[33m ([m[1;33mtag: 2.6.0[m[33m)[m
+Merge: e1b5600 60261c0
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Wed Jan 24 13:39:45 2018 +0100
+
+    feat/ add webview directive
+
+[33mcommit e1b56002d8ad26df83a8c07f7d7744793f5a11a5[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Wed Jan 24 13:39:09 2018 +0100
+
+    feat/ add webview directive
+
+[33mcommit f6a0c4ecb97a5ec7c137528e037015d041dd5acc[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Wed Jan 24 13:29:51 2018 +0100
+
+    ref/ upgrade electron (security issue)
+
+[33mcommit 2a28239152a3dc4352cef8224e76f6f3c06d6ad5[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Wed Jan 24 13:29:23 2018 +0100
+
+    ref/ Remove sponsor
+
+[33mcommit 60261c018fe2deb57523b4f3eb5d343797f30ad5[m
+Merge: b7cc405 3545d16
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Wed Jan 24 13:28:52 2018 +0100
+
+    Merge pull request #114 from whyboris/update-readme
+    
+    version bump + logo resize
+
+[33mcommit 3545d16daffed5f702d3e3c885819e1133d6b03c[m
+Author: whyboris <byakubchik@forbes.com>
+Date:   Sat Jan 20 09:18:39 2018 -0500
+
+    version bump + logo resize
+
+[33mcommit b7cc4057e61f515ad89ee4f110cb852612bd3caa[m[33m ([m[1;33mtag: 2.5.0[m[33m)[m
+Merge: b8cf343 8502712
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Jan 12 02:10:42 2018 +0100
+
+    Merge branch 'master' of https://github.com/maximegris/angular-electron
+
+[33mcommit 8502712d4bf261738a9558d31bb9d5ac2e3ef1cf[m
+Merge: 886dcb9 136344b
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Fri Jan 12 02:10:48 2018 +0100
+
+    Merge pull request #105 from StevePorter92/98
+    
+    fix: fixes maximegris/angular-electron#98
+
+[33mcommit b8cf343f0f33d440feb9a7d7639a65be2790e410[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Jan 12 02:03:35 2018 +0100
+
+    migrate Angular to 5.2.0
+
+[33mcommit 886dcb97f80dc09f95f5f4aecd9cef99ff1eff55[m
+Merge: 5fcfca0 d6655c7
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Fri Jan 12 01:37:08 2018 +0100
+
+    Merge pull request #102 from necraidan/master
+    
+    Correction of a word.
+
+[33mcommit 136344b1cb96ea9947a080394c2280721ff45667[m
+Author: Steve Porter <steve@designmynight.com>
+Date:   Wed Jan 10 20:37:46 2018 +0000
+
+    fix: fixes maximegris/angular-electron#98
+
+[33mcommit d6655c7ce044467096e2f79e0462012995f8249c[m
+Author: Benjamin Auzanneau <benjamin.auzanneau.tm@gmail.com>
+Date:   Wed Jan 3 13:45:19 2018 +0100
+
+    Correction of a word.
+
+[33mcommit 5fcfca019da3426326cc3cbedeafaa662cd70deb[m[33m ([m[1;33mtag: 2.4.1[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Thu Dec 14 10:34:50 2017 +0100
+
+    version 2.4.1
+
+[33mcommit d62960753d67c884df888c55d2e23ad43f950543[m
+Merge: 0437b33 ccd0601
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Thu Dec 14 10:32:06 2017 +0100
+
+    Merge pull request #92 from stalina/master
+    
+    fix/ Manage icons for linux binary generation
+
+[33mcommit ccd060151b173b94e622b19191ab3c8373009d43[m
+Author: Antoine Stalin <astalin@norsys.fr>
+Date:   Mon Dec 11 18:34:33 2017 +0100
+
+    fix/ Manage icons for linux binary generation
+    
+    regarding electron documentation, for linux OS, icons should contain a directory with icons
+    https://www.electron.build/icons
+    
+    Images in this directory must contain the size of the icon in their filename
+
+[33mcommit 0437b33c36e6806d60a03463644bb7abe3de83a5[m[33m ([m[1;33mtag: 2.4.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Dec 8 11:20:38 2017 +0100
+
+    version 2.4.0
+
+[33mcommit 1e6113f71aca9f76822ce39facbd31884f4603fb[m
+Merge: facda37 32b56c4
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Dec 8 11:19:31 2017 +0100
+
+    merge migration httpclient
+
+[33mcommit facda3726d9aab6320905ce78414c4f4f0ab901d[m[33m ([m[1;33mtag: 2.3.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Mon Dec 4 13:52:57 2017 +0100
+
+    add ngx translate
+
+[33mcommit 32b56c4080f1832e144f060af5e819de72dc3a1d[m
+Merge: f4bc5b2 5704e2e
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Dec 3 09:23:22 2017 +0100
+
+    Merge pull request #88 from LeoMartinDev/master
+    
+    Use HttpClientModule
+
+[33mcommit 5704e2e10b5338acc9f59439874006321622de49[m
+Author: Léo Martin <leo1.martin@epitech.eu>
+Date:   Sun Dec 3 00:11:47 2017 +0100
+
+    Use HttpClientModule
+    
+    HttpModule is deprecated
+
+[33mcommit f4bc5b21bc63b4c3d2eb81ae1e0a87f0ab571001[m[33m ([m[1;33mtag: 2.2.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Tue Nov 28 09:45:11 2017 +0100
+
+    migrate to Angular 5.0.3
+
+[33mcommit d5e12c00c988c7f8f6d6159c0c3b937ea89686cc[m
+Merge: 8194cc7 0e94b52
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Tue Nov 28 09:06:54 2017 +0100
+
+    Merge pull request #86 from seopei/update-to-electron-builder
+    
+    Update to electron-builder
+
+[33mcommit 8194cc7d03dcbae9fec1db198ef3f91983baaf7f[m
+Merge: 9552315 fa783aa
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Tue Nov 28 09:02:45 2017 +0100
+
+    Merge pull request #85 from rm-code/patch-1
+    
+    Update LICENSE badge
+
+[33mcommit 0e94b5285bb40c081418a3bf96b1cd940adaeb59[m
+Author: Sebastian Peischl <sebastian.peischl@cnc.io>
+Date:   Fri Nov 24 15:48:56 2017 +0100
+
+    Update to electron-builder
+
+[33mcommit fa783aad74476cf8106c23dafef13b82646ad4c4[m
+Author: Robert Machmer <robert.machmer@gmail.com>
+Date:   Thu Nov 23 12:10:40 2017 +0100
+
+    Update LICENSE badge
+
+[33mcommit 9552315295fe0b0d39c9153bcaa3999d0ea81fde[m
+Merge: 064be4c 441da3d
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Mon Nov 20 16:33:27 2017 +0100
+
+    Merge pull request #82 from jansivans/master
+    
+    Brought back scripts defined in webpack.config.js
+
+[33mcommit 441da3dd0e2b387f978bbc558bea11e514a91c81[m
+Author: Yan Ivan Evdokimov <jans.ivans@gmail.com>
+Date:   Mon Nov 20 11:45:12 2017 +0200
+
+    Brought back scripts defined in webpack.config.js
+
+[33mcommit 064be4cb3c1e733716793d9280dcaf2e661f0cbd[m[33m ([m[1;33mtag: 2.1.1[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Nov 19 14:31:04 2017 +0100
+
+    Move codesponsor
+
+[33mcommit 518b66b16ca0744c625abe26379064bafcd7ba98[m[33m ([m[1;33mtag: 2.1.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Nov 19 01:08:28 2017 +0100
+
+    fix/ webpack template path
+
+[33mcommit d2c253f2058f459f0ff2d163e87d9fe4dc33482a[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Nov 19 00:59:23 2017 +0100
+
+    fix/ electron-packager need favicon >= 256x256 on Windows
+
+[33mcommit d1c30ac68ef871e65713a9310d8428a276cbdbc3[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Nov 19 00:48:36 2017 +0100
+
+    fix/ refact webpack config (inspired by ng eject Angular 5)
+
+[33mcommit a0caf1e29266c582ea1a9961942d3604eb3080ad[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Nov 18 20:31:02 2017 +0100
+
+    fix/ replace aotPlugin in no prod mode
+
+[33mcommit fccef2f338129e4ba770cccfdf94281886449e9a[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Nov 18 20:13:33 2017 +0100
+
+    Version 2.1.0
+
+[33mcommit bd7bed6c17f2a9ba268a638e0130638eae27781c[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Nov 18 20:13:05 2017 +0100
+
+    Mgrate to Angular 5.0.2
+
+[33mcommit bef106e2f67a43f4548acde01dbfdf8094e8a734[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Nov 18 20:12:41 2017 +0100
+
+    fix/ Replace AotPlugin to AngularCompilerPlugin
+
+[33mcommit 87e695d736f0c0897457949c72c4aea17868ff55[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Nov 18 19:20:00 2017 +0100
+
+    Add codesponsor
+
+[33mcommit 0ce70b0a7213b93a4a108d8e421ab958dea4b85e[m
+Merge: 93c6949 b16cf73
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sat Nov 18 19:14:54 2017 +0100
+
+    Merge pull request #78 from Lazza/master
+    
+    Add support for building a single executable for Windows
+
+[33mcommit b16cf7394d5b65e5ec2d014dfb382aa2b6914184[m
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sat Nov 18 19:10:17 2017 +0100
+
+    Update package.json
+
+[33mcommit 2be2dae6c38ca6f38f5f21d3305251858127f4fb[m
+Author: Andrea Lazzarotto <andrea.lazzarotto@gmail.com>
+Date:   Mon Nov 13 22:40:38 2017 +0100
+
+    Add script for winportable
+
+[33mcommit 7cfa79030e854d8d806c6b42cad02dab683b13b5[m
+Author: Andrea Lazzarotto <andrea.lazzarotto@gmail.com>
+Date:   Mon Nov 13 22:36:09 2017 +0100
+
+    Add support for building a Windows self-contained executable
+
+[33mcommit 93c694977ff3a3f669e69eb2b6c75565d5819392[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Mon Nov 13 14:07:58 2017 +0100
+
+    fix/ Update README Angular 5
+
+[33mcommit 3a3ffe189398324b10c769e0a50d99e305227126[m[33m ([m[1;33mtag: 2.0.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Mon Nov 13 14:05:58 2017 +0100
+
+    Migrate to Angular 5
+
+[33mcommit 73494b7fe9077ee6f167de7ca3614d2e2462da55[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Mon Nov 13 14:05:34 2017 +0100
+
+    License MIT
+
+[33mcommit e5beaa2ba8c8bd9d13136dbb11e0bb8a635103e5[m
+Merge: 554ef2c 956a2bc
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Tue Oct 31 13:26:44 2017 +0100
+
+    Merge pull request #71 from sookcha/master
+    
+    Edit a typo on README
+
+[33mcommit 956a2bc30864773c9e13db4cb7200cfce6ff43dc[m
+Author: Hoseong Son <lsookcha@me.com>
+Date:   Sun Oct 29 22:53:01 2017 +0900
+
+    Edit a typo on README
+
+[33mcommit 554ef2cf0c147dee7bd23af471a33a94ee88c2b8[m
+Merge: 62ac244 7e797f0
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun Oct 29 09:57:23 2017 +0100
+
+    Merge pull request #66 from yannisgu/patch-1
+    
+    Add buffer to externals
+
+[33mcommit 7e797f0fb7b6f010a40024abe30c5b2dcba14714[m
+Author: Yannis Güdel <me@yannisguedel.ch>
+Date:   Fri Oct 13 21:54:57 2017 +0200
+
+    Add buffer to externals
+    
+    Add buffer as external library. Else some other buffer libary (browser buffer) will be used, which will break some other libraries (e.g. MySQL).
+
+[33mcommit 62ac2446f5084092443c58d87722b3a884b8011e[m
+Merge: 8c37cc4 41445eb
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Tue Sep 26 11:38:51 2017 +0200
+
+    Merge branch 'master' of https://github.com/theo4u/angular-electron
+    
+    # Conflicts:
+    #       package-lock.json
+
+[33mcommit 41445eb2c307ec05b5a056a19f9e2e72fbe142cc[m
+Author: Theophilus Omorebee <theo4u@ymail.com>
+Date:   Fri Sep 22 17:36:11 2017 +0100
+
+    Fix #55 removed bootstraps.css which for example purpose before.
+
+[33mcommit 8c37cc4c7fad3cdd25a76dd514df55e5dc6c39d8[m[33m ([m[1;33mtag: 1.9.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Sep 22 17:08:11 2017 +0200
+
+    feat/  launch electron & webpack in // (npm run start)
+
+[33mcommit 412a0a5b626de73055a09137231ef6ba98faf868[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Sep 22 17:05:29 2017 +0200
+
+    ref/ Exclude node_modules (tslint)
+
+[33mcommit 70879d18c45fd65564f160c344552ea3c2195798[m[33m ([m[1;33mtag: 1.8.1[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Sep 22 14:46:07 2017 +0200
+
+    version 1.8.1
+
+[33mcommit 10d0f870cebee68ded6e75b0775a3e3f25bd666f[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Sep 22 14:43:00 2017 +0200
+
+    upgrade angular version 4.4.3
+
+[33mcommit 4edd98d54676b76d3941e4abb93a0ed16a14e48c[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Sep 22 14:08:07 2017 +0200
+
+    ref/ add package-lock in gitignore
+
+[33mcommit 8e986275ba9384575eb27126781bcfb879f86583[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Sep 22 14:07:42 2017 +0200
+
+    remove package-lock
+
+[33mcommit 012a894c0482d4ca36d9f6ae95d78c79c75ca707[m
+Author: Theophilus Omorebee <theo4u@ymail.com>
+Date:   Thu Sep 14 12:58:16 2017 +0100
+
+    Fix #55 , and also added functionality for scripts global building
+
+[33mcommit 2ac2aa0abc798a17b9aa66314c881cef0268c036[m[33m ([m[1;33mtag: 1.8.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Sat Sep 9 13:48:10 2017 +0200
+
+    upgrade lib version
+
+[33mcommit f97cd8169239c5f15713903207f7e48040b15317[m[33m ([m[1;33mtag: 1.7.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Aug 18 10:07:42 2017 +0200
+
+    ref/ Update Angular (4.3.5) / Electron (1.7.2) / Electron Packager (8.7.2) / Typescript (2.5.0)
+
+[33mcommit 899babd5bc22edffa439213c5c1e80112f8b26bb[m[33m ([m[1;33mtag: 1.6.1[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Thu Jul 27 13:33:57 2017 +0200
+
+    version 1.6.1
+
+[33mcommit c26a5aec6aacd6def96721646ae2121b942d1a30[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Thu Jul 27 12:13:23 2017 +0200
+
+    fix/  angular-cli error in prod compilation with aot
+
+[33mcommit 9c51f3247be9e899d14716b8d38afa415191417d[m[33m ([m[1;33mtag: 1.6.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Jul 16 19:43:04 2017 +0200
+
+    fix/ e2e test with jasmine2
+
+[33mcommit 2a90191458de6371e59d53c3e32257782884cfaf[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Jul 16 18:59:09 2017 +0200
+
+    fix/ Bindings not updating automatically #44
+
+[33mcommit ab16959ae23c830d412a690ebff04107b1361fae[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Jul 16 18:58:48 2017 +0200
+
+    upgrade angular version to 4.3.0
+
+[33mcommit bde452c32cc7435acdf779026e8be17679daf785[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Jul 14 21:06:20 2017 +0200
+
+    increment version deps
+
+[33mcommit bb0a6abd283e32be606caa0281d68a4fad07eb3c[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Jul 14 21:05:33 2017 +0200
+
+    fix/ typescript issues
+
+[33mcommit 7e5871714f18e69b9e9769ae857c3b51d8bf74e6[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Jun 30 17:09:28 2017 +0200
+
+    Change background img
+
+[33mcommit 09c08408111c5d89548803ab9dfc878e85e29b08[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Jun 30 17:09:14 2017 +0200
+
+    ajout package-lock npm v5
+
+[33mcommit ccc90648fead44107ea2f380289915aa94c1f19a[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Jun 23 10:01:35 2017 +0200
+
+    Revert last pull request - break production compilation
+
+[33mcommit 0fbc882468c63b0621aee7b6cf6c76534ea2af94[m
+Merge: 8a49a45 c23bade
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Fri Jun 23 09:55:55 2017 +0200
+
+    Merge pull request #38 from osmarcs/master
+    
+    Fix npm run build:prod
+
+[33mcommit c23badeeaa251d2f041f6461e815a1e0e69fd56d[m
+Author: Osmar Costa <osmar.costa.s@gmail.com>
+Date:   Tue Jun 20 20:19:42 2017 -0300
+
+    Fix npm run build:prod
+
+[33mcommit 8a49a454caba7dc05325ba0d99b06cb04a80b779[m[33m ([m[1;33mtag: 1.5.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Jun 10 18:47:27 2017 +0200
+
+    fix/ remove yarn because of error with module dep in prod builds
+
+[33mcommit 18c0e62dbafe2f6468dfa02071e37ec7f7d0e51d[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Jun 10 11:31:23 2017 +0200
+
+    update yarn lock
+
+[33mcommit ea13d6d2e13a2b68f924694fd67d64d617eeada8[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Thu Jun 8 13:04:19 2017 +0200
+
+    fix/ karma Unit test
+
+[33mcommit db7972aca4cabd9b4b55420e0e1dd029e7834de9[m[33m ([m[1;33mtag: 1.4.4[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Thu Jun 8 12:55:53 2017 +0200
+
+    fix/ Fix npm run lint
+
+[33mcommit 7e71add264adb946ec2b5ad50fdb4c5376dd492e[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Wed Jun 7 23:00:02 2017 +0200
+
+    ref/ electron ./dist more generic
+
+[33mcommit dadf65f89b76751e6fe22e00242e39f512a8da09[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Wed Jun 7 20:12:20 2017 +0200
+
+    Replace const icon to let icon
+
+[33mcommit 4961fb0a3e7ae954103f6b6cd46fc0fd5ff37daf[m[33m ([m[1;33mtag: 1.4.3[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Tue Jun 6 22:58:24 2017 +0200
+
+    v1.4.3
+
+[33mcommit aa2b0122878bb3b769e66d2a56a9f31584de1874[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Tue Jun 6 22:58:00 2017 +0200
+
+    fix/ favicon path during packaging
+
+[33mcommit 34f201d1d542ec149b76d450d255660f1ecf5d8e[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed May 31 19:56:47 2017 +0200
+
+    remove build node 8 till node-sass failed
+
+[33mcommit f2f20806c63d3fa8b425bf4df99f975c1c33d23b[m[33m ([m[1;33mtag: 1.4.2[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed May 31 19:49:54 2017 +0200
+
+    update Electron v1.6.10
+
+[33mcommit 6772c9fed6238fd99719eea3ec0a7a481dceeebc[m
+Merge: 56948d0 b62c7b6
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Wed May 31 19:33:38 2017 +0200
+
+    Merge pull request #26 from danielsogl/patch-1
+    
+    chore(package): bump dependencies
+
+[33mcommit b62c7b63000a220cbe17a8d09cea862ffe7fd448[m
+Author: Daniel Sogl <daniel@sogls.de>
+Date:   Wed May 31 02:27:30 2017 +0200
+
+    chore(package): bump dependencies
+
+[33mcommit 56948d0fdbc05495c2e27013e0abd5f17c952d10[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun May 28 20:49:42 2017 +0200
+
+    install npm dep when building
+
+[33mcommit 62d08d39a78c4b061f5e48e764a3b4d6e703fa30[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri May 26 09:46:22 2017 +0200
+
+    Change dep versions
+
+[33mcommit 78b0f27da33b14d1c26908109c4f984c3a2a4dd7[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri May 26 09:45:59 2017 +0200
+
+    upgrade ng/electron dependencies
+
+[33mcommit 7892f0d3a6859ca4d1c576959351535439279ada[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Tue May 23 22:08:35 2017 +0200
+
+    No hot reload in browser
+
+[33mcommit 5f282b784c1e100c67ce1686a2cc163fea23217a[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Tue May 23 21:58:38 2017 +0200
+
+    Minor update
+
+[33mcommit 23213c464062aab0738b2151957e8b967e5f1255[m[33m ([m[1;33mtag: 1.4.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Tue May 23 21:56:54 2017 +0200
+
+    1.4.0
+
+[33mcommit 835d32bdcdb7d2e7febb30c6b396d2e1ae02046c[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Tue May 23 21:56:17 2017 +0200
+
+    ref/ electron main from js to ts
+
+[33mcommit 93dcc52ac960406c22bec9bf4cb7d358ff26923c[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Tue May 23 21:55:43 2017 +0200
+
+    Change style home page
+
+[33mcommit c9baed3a23b2be84d435dc0d077eb27339309a24[m[33m ([m[1;33mtag: 1.3.6[m[33m)[m
+Merge: dd98155 d99f794
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun May 21 16:56:36 2017 +0200
+
+    Merge branch 'master' of https://github.com/maximegris/angular-electron
+
+[33mcommit dd98155951b8bf9e6c4df10d37fc143544ab6afa[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun May 21 16:56:17 2017 +0200
+
+    Remove caret & tilde
+
+[33mcommit d99f794b0b0657f475930e4f0fb65658054a7d0b[m
+Merge: d528a71 fca6b15
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Sun May 21 15:17:54 2017 +0200
+
+    Merge pull request #22 from coddo/master
+    
+    Fixed compiler warnings #21
+
+[33mcommit fca6b15d30258d139f112bd547f4a33d385139ef[m
+Author: Claudiu Codoban <codobanclaudiu@gmail.com>
+Date:   Sun May 21 15:30:29 2017 +0300
+
+    Fixed compiler warnings
+
+[33mcommit d528a71c4ed3b713881f0945d74f3ab0d54d3936[m[33m ([m[1;33mtag: 1.3.5[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Thu May 18 19:58:06 2017 +0200
+
+    v 1.3.5
+
+[33mcommit cd07a86ee85cccedd34d70fe033fce8a6c7f12e5[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Thu May 18 19:57:38 2017 +0200
+
+    Add new tags
+
+[33mcommit 374af16f8c92483a09d4be35d501a0d574dc4d86[m[33m ([m[1;33mtag: 1.3.4[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 12 19:38:10 2017 +0200
+
+    version 1.3.4
+
+[33mcommit 27d9bc65f84d90ac89d4fcfa3f8a84e6296348f5[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 12 19:37:36 2017 +0200
+
+    feat/ add nodejs native lib in webpack config
+
+[33mcommit 17b04e8998a5aa9a514a6b2e3b09dc3c745238ae[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 12 19:36:55 2017 +0200
+
+    Ref/ Electron packager in external file
+
+[33mcommit d77cbf18d6254ec95ad15f0d92dfe7d2a9881cf5[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed May 10 20:57:54 2017 +0200
+
+    Fix issue #15
+
+[33mcommit f4db75bbd6474930c782949eca31f24564c8f6de[m[33m ([m[1;33mtag: 1.3.3[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed May 10 18:05:07 2017 +0200
+
+    Version 1.3.3
+
+[33mcommit e7cd6e6df307c9c781ef7b76206b108ca541e864[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed May 10 18:04:46 2017 +0200
+
+    Fix issue #15
+
+[33mcommit 89e34ebe49123e9319662345d86a598dbf5d8a07[m
+Merge: 8818750 06547e5
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat May 6 01:12:14 2017 +0200
+
+    Move browser mode chapter
+
+[33mcommit 881875036a46f13ef6980e84a6064a665670f454[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat May 6 01:11:27 2017 +0200
+
+    Move Browser mode chapter
+
+[33mcommit 083498eab8cb7c72e84125e8d6b7f54b2838951d[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat May 6 01:11:14 2017 +0200
+
+    Delete spec file of electron.service
+
+[33mcommit a772b9c74fd8c2d4aa1358caaa2f839bfa2a2d79[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat May 6 01:09:04 2017 +0200
+
+    Chapters order
+
+[33mcommit 06547e5c855bef81c1c9d1ded0b3e7cfc12fae8e[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat May 6 01:09:04 2017 +0200
+
+    Chapters order
+
+[33mcommit 0849a0a6c0e91b507b1f435401cee031f64bb37e[m[33m ([m[1;33mtag: 1.3.2[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat May 6 01:05:46 2017 +0200
+
+    update version
+
+[33mcommit 01bbf1343707527b5c26c322abfa6199d2937aa6[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat May 6 01:05:38 2017 +0200
+
+    Update readme with e2e info
+
+[33mcommit e6c1b3ba5d7633c9f47191113dab463163a7aa89[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat May 6 01:05:13 2017 +0200
+
+    Add comments of how conditional import works
+
+[33mcommit d2239745a2dc14ad6d6b07520f31ea1e51d03594[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat May 6 00:45:37 2017 +0200
+
+    Set e2e tests
+
+[33mcommit c434f8a8b0c0d1d8e5843af57465a24e900d967c[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat May 6 00:44:59 2017 +0200
+
+    Conditional import of Electron/NodeJS libs - The app can be launch in browser mode
+
+[33mcommit 9d43304b678d64fa30ca9ded72cfa8e2e8bee089[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat May 6 00:43:30 2017 +0200
+
+    Update @types/node
+
+[33mcommit 88be4723793cddb7b21bbdfffaa245849b45d8fa[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat May 6 00:43:15 2017 +0200
+
+    Suround electron browser by try/catch
+
+[33mcommit b2af4fd24a3722f1fa4cc0d345f505214002f4f0[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 5 23:41:23 2017 +0200
+
+    Fix prepree2e script
+
+[33mcommit 6a9836a1e48e34060e826e747464ab63e654ab16[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 5 23:40:57 2017 +0200
+
+    Fix indentation
+
+[33mcommit f18ac77e074a253dc9ece45dd16d1a3c23c18470[m[33m ([m[1;33mtag: 1.3.1[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 5 22:39:09 2017 +0200
+
+    Version 1.3.1
+
+[33mcommit 7334ce89b5daabba9fa5d1c0c940ebc38aecbc9a[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri May 5 22:38:28 2017 +0200
+
+    Add routing module
+
+[33mcommit 8eaaa79cab2ba60f21262e869bd86383f6bf2f5c[m
+Merge: 7cf6a51 815d519
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Wed May 3 17:27:22 2017 +0200
+
+    Merge pull request #11 from vorthess/master
+    
+    Fixed hardcoded path in glob copy, blocking assets after eject
+
+[33mcommit 815d519fd0e526f279990cb66d640715230a3184[m
+Author: Łukasz Ostrowski <lukasz.ostrowski@creativestyle.pl>
+Date:   Wed May 3 17:16:01 2017 +0200
+
+    Fixed hardcoded path in glob copy, blocking assets after eject
+    
+    angular cli after eject hardcodes path, so it must be changed to relative process.cwd() + "/src",
+    then assets copy will work correctly
+
+[33mcommit 7cf6a51532f589305fc488c769391c4d1a1d06b9[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Mon May 1 14:20:15 2017 +0200
+
+    update comments in dev/prod env files
+
+[33mcommit 8549da1a17d946b4cc272d8baf9d4ad64fe4e458[m[33m ([m[1;33mtag: 1.3.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Mon May 1 14:08:41 2017 +0200
+
+    Fix webpack prod/dev env
+
+[33mcommit 78e8da71d2ace705fb8448284fc88d590a8eabb8[m[33m ([m[1;33mtag: 1.2.1[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Apr 30 11:41:48 2017 +0200
+
+    update version 1.2.1
+
+[33mcommit a7ee90eb504737465526d306e74c723b730fa8ad[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sun Apr 30 11:35:19 2017 +0200
+
+    Fix electron build (extract-zip workaround)
+
+[33mcommit c55558a63291a7de55cbf4ae0d5f39dc8cd05b5d[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Thu Apr 27 21:14:22 2017 +0200
+
+    html loader
+
+[33mcommit 4efd1880a2e10af7cf2d8a01ecc0577abbe13756[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Thu Apr 27 21:03:16 2017 +0200
+
+    allowJs
+
+[33mcommit 3705a35c7369b57d2798655af865dbdee385edba[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Apr 21 20:19:15 2017 +0200
+
+    Example url background in scss
+
+[33mcommit cea4be57ba02d343f169eb024c8ac25074857062[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Apr 21 20:18:46 2017 +0200
+
+    Fix webpack config url in css
+
+[33mcommit 0a93ebe96a7e60502fb99160ab0227ba1b879103[m[33m ([m[1;33mtag: 1.2.0[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Apr 19 20:40:01 2017 +0200
+
+    Update npm dependencies
+
+[33mcommit a15775fb7a98399852bb12dd39bdc3d9393be48d[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Apr 19 20:36:09 2017 +0200
+
+    Set one example of css class in app component
+
+[33mcommit e29e46772fd4c6f87df79e5ca18dde1fc9becdb8[m[33m ([m[1;33mtag: 1.1.2[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Apr 19 00:01:56 2017 +0200
+
+    v1.1.2
+
+[33mcommit bd068590765f3bb497c1f3656bb11556abbd5f3f[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Wed Apr 19 00:01:33 2017 +0200
+
+    Fix typo & fix script electron:mac
+
+[33mcommit 97fa63d7ee76fd269f65383441070d9d3565c824[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Apr 14 19:06:14 2017 +0200
+
+    update README
+
+[33mcommit 23fc0a9b2117bd8056acbf4e69aeb4aeb0cf74dd[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Apr 14 09:51:11 2017 +0200
+
+    update README
+
+[33mcommit a8dcf6ac58e232cadbb1c73c1f65c97a8e85d09f[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Fri Apr 14 09:41:35 2017 +0200
+
+    update README
+
+[33mcommit 644d8575e2d223c9490fbf03eda491d1daad8342[m
+Author: Maxime GRIS <maximegris@users.noreply.github.com>
+Date:   Wed Apr 12 20:29:31 2017 +0200
+
+    Set theme jekyll-theme-architect
+
+[33mcommit e9150f4a41e2a1b1a7af33e79e4af7ae1f96370a[m[33m ([m[1;33mtag: 1.1.1[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Wed Apr 12 20:09:12 2017 +0200
+
+    Remove unused dependency (webpack-dev-server)
+
+[33mcommit 7bb2f8b20a027cfc4aea0988fd98fe5c74e69f03[m
+Author: Daniel Prado <danielprado.ad@gmail.com>
+Date:   Wed Apr 12 13:57:43 2017 -0300
+
+    live reload on disk
+
+[33mcommit a172df94d918de4af0d0f223f9be4bcc471bd731[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Wed Apr 12 19:56:59 2017 +0200
+
+    Fix webpack.config file path (travisci)
+
+[33mcommit 60d6116b6df17e7451a487359471dbba7ba20882[m[33m ([m[1;33mtag: 1.1.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Wed Apr 12 18:07:04 2017 +0200
+
+    Override webpack configuration
+
+[33mcommit 6ceb0f2a10a68276c30e86a681d24cdd46c23280[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Sat Apr 8 11:56:37 2017 +0200
+
+    add depdencies CI & Licence
+
+[33mcommit 9866d53ea31776f868dcdc0deba906cac7f6a99a[m[33m ([m[1;33mtag: 1.0.3[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Apr 7 10:37:47 2017 +0200
+
+    v1.0.3
+
+[33mcommit e5640fd6052be0bd23a8052f2c717f0e5fc563dd[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Apr 7 10:37:33 2017 +0200
+
+    Add TravisCI
+
+[33mcommit 1bd8e0ebf13e9be64a95cc4cc98090290a8647a1[m[33m ([m[1;33mtag: 1.0.2[m[33m)[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Apr 7 10:25:59 2017 +0200
+
+    v1.0.2
+
+[33mcommit ef4b80ed706a3a7e7918b291d9cc4a5f17cd9791[m
+Author: Maxime GRIS <maxime.gris@gmail.com>
+Date:   Fri Apr 7 10:25:34 2017 +0200
+
+    Add TravisCI
+
+[33mcommit 3bb45b39b4a550caaf223a786b25f12ec37174c4[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Tue Apr 4 10:11:40 2017 +0200
+
+    Update README
+
+[33mcommit f964c3ffd9397977347a17740ff30b350eaa9006[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Mon Apr 3 21:34:24 2017 +0200
+
+    Fix typo
+
+[33mcommit e42bb5ed01a8fe6acbe969e60f08647d5b4100e5[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Mon Apr 3 21:34:06 2017 +0200
+
+    Fix typo
+
+[33mcommit 5a57578b47c74f68277b78adb1dd53c9b1ba4f0f[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Mon Apr 3 15:24:42 2017 +0200
+
+    Update README with angular-cli doc
+
+[33mcommit 7fddc20484cbb23ff2128c209a7548408c311111[m[33m ([m[1;33mtag: 1.0.1[m[33m, [m[1;33mtag: 1.0.0[m[33m)[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Mon Apr 3 12:15:49 2017 +0200
+
+    ref/ update README
+
+[33mcommit 68275a3d18c6582422675c5d884f70e539ad0bd2[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Mon Apr 3 12:04:21 2017 +0200
+
+    v1.0.1
+
+[33mcommit 57891dc9f409f95d2a7f2ae88ebe7a0a40f06218[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Mon Apr 3 12:03:56 2017 +0200
+
+    feat/ Add electron-packager scripts
+
+[33mcommit 9a983c1a1a1e23638d1660f513070aab35a90e10[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Mon Apr 3 10:20:56 2017 +0200
+
+    update README
+
+[33mcommit 7a21eb96e491c01b91b834160494681a77ef6c0f[m
+Author: Maxime GRIS <m.gris@emotic.fr>
+Date:   Sun Apr 2 13:15:24 2017 +0200
+
+    v1.0.0
+
+[33mcommit 616a69ea0b4d3601bfcda207aca238660458ac55[m
+Author: Angular CLI <angular-cli@angular.io>
+Date:   Sun Apr 2 12:36:26 2017 +0200
+
+    chore: initial commit from @angular/cli

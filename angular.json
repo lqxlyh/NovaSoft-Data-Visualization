@@ -1,8 +1,5 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "defaultCollection": "@angular-eslint/schematics"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -10,11 +7,6 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
@@ -25,23 +17,23 @@
             "tsConfig": "src/tsconfig.app.json",
             "polyfills": "src/polyfills.ts",
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": [],
             "customWebpackConfig": {
-              "path": "./angular.webpack.js",
-              "replaceDuplicatePlugins": true
+              "path": "./angular.webpack.js"
             }
           },
           "configurations": {
             "dev": {
               "optimization": false,
-              "outputHashing": "none",
+              "outputHashing": "all",
               "sourceMap": true,
+              "extractCss": true,
               "namedChunks": false,
               "aot": false,
               "extractLicenses": true,
@@ -56,8 +48,9 @@
             },
             "web": {
               "optimization": false,
-              "outputHashing": "none",
+              "outputHashing": "all",
               "sourceMap": true,
+              "extractCss": true,
               "namedChunks": false,
               "aot": false,
               "extractLicenses": true,
@@ -74,6 +67,7 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
+              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -120,23 +114,24 @@
             "karmaConfig": "src/karma.conf.js",
             "scripts": [],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "assets": [
               "src/assets"
             ],
             "customWebpackConfig": {
-              "path": "./angular.webpack.js",
-              "replaceDuplicatePlugins": true
+              "path": "./angular.webpack.js"
             }
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
+            "eslintConfig": ".eslintrc.json",
             "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
+              "src/**.ts",
+              "main.ts"
             ]
           }
         }
@@ -149,8 +144,9 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
+            "eslintConfig": ".eslintrc.json",
             "lintFilePatterns": [
-              "e2e/**/*.ts"
+              "e2e/**.ts"
             ]
           }
         }
@@ -166,5 +162,8 @@
     "@schematics/angular:directive": {
       "prefix": "app"
     }
+  },
+  "cli": {
+    "analytics": "69a8cdbc-bdd2-4ff1-b5ff-a9d3c4a47096"
   }
 }

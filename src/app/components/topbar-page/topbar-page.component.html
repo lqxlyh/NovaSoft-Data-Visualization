@@ -1,0 +1,16 @@
+<div id="top">
+        <div style="margin-bottom: 25px; margin-top: 20px; font-size: 45px; font-weight: 500; text-align: center;">NovaSoft</div>
+</div>
+
+
+<mat-toolbar>
+    <div style="width: 50%; text-align: center; background-color: greenyellow;" id="mainPageLink">        
+        <a mat-button routerLink="/main-page" [disabled]="isMainPageLinkDisabled"  (click)="goToMainPage()" style="font-weight: 400; font-size: 35px;">Test</a>
+    </div>
+    <div style="width: 50%; text-align: center;" id="analysisPageLink">   
+        <a mat-button routerLink="/analysis-page" [disabled]="isAnalysisPageLinkDisabled"  (click)="goToAnalysisPage()" style="font-weight: 400; font-size: 35px;">Analysis</a>
+    </div>
+</mat-toolbar>
+
+
+

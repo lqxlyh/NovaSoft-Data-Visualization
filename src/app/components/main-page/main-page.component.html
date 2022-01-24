@@ -1,0 +1,748 @@
+<div id = "mainPage">
+    <div id="GCTypePicker" style="text-align:center;">
+        <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black">
+            <mat-label>Select GC Type</mat-label>
+            <mat-select (selectionChange)="GCTypeChange($event)">
+              <mat-option *ngFor="let type of GCTypes" [value]="type">
+                {{type}}
+              </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    
+    <form id = "NonComprehensiveForm" [formGroup]="NonComprehensiveParametersForm" style="display: none;">
+        <div id="NonComprehensiveBasicSetting">
+            <h1>Basic Setting</h1>
+                <div class="OneFourPercentDiv" style="vertical-align: top;">
+                    <h2>Test Setting</h2>
+
+                    <div style="text-align: left;">
+                        <mat-radio-group formControlName="NonComprehensiveTestMode">
+                            <div>
+                              <mat-radio-button class="HalfPercentDiv" value="1" style="margin-bottom: 30px; margin-top: 20px; margin-right: 10px;">Fixed Time</mat-radio-button>
+                              <input class="HalfPercentDiv" placeholder="start time" formControlName = "NonComprehensiveStartTime">
+                            </div>
+                            <div>
+                                <mat-radio-button class = "HalfPercentDiv" value="0" style="margin-right: 20px;">Non Fixed Time</mat-radio-button>
+                                <div class = "HalfPercentDiv">
+                                    <input class="HalfPercentDiv" style="width:  25%; margin-right: 5px;" placeholder="count" formControlName = "NonComprehensiveRunCount">
+                                    <input class="HalfPercentDiv" style="width: 55%;" placeholder="interval(min)" formControlName = "NonComprehensiveRunInterval">
+                                </div>
+                            </div>
+                        </mat-radio-group>
+                    </div>
+
+                   
+                </div>
+                
+                <div class="OneFourPercentDiv" style="text-align: left; vertical-align: top;">
+                    <h2>Sampling Setting</h2>
+                    <div style="text-align: left;">
+                        <mat-radio-group formControlName="NonComprehensiveSamplingMode">
+                            <div>
+                                <mat-radio-button  class = "HalfPercentDiv" value="0" style="margin-bottom: 2px; margin-top: 20px; margin-right: 10px;">One Time</mat-radio-button>
+                                <input class="HalfPercentDiv" placeholder="sampling time/min" formControlName = "NonComprehensiveSamplingTime">
+                            </div>
+                            <div>
+                                <mat-radio-button class = "HalfPercentDiv" value="1" style="margin-bottom: 2px; margin-right: 10px;">Intermittent(4h)</mat-radio-button>
+                                <input class="HalfPercentDiv" placeholder="percent(%)" formControlName = "NonComprehensiveSamplingPercent">
+                            </div>
+                            <div>
+                                <label class = "HalfPercentDiv" style=" margin-right: 10px;">RV Open Time</label>
+                                <input class = "HalfPercentDiv" placeholder="valve open time/s" formControlName = "NonComprehensiveReferenceValveOpenTime">
+                            </div>
+                        </mat-radio-group>
+                    </div>
+                </div>
+
+                <div class="OneFourPercentDiv">
+                    <h2>Humidity Filter Cleaning:</h2>
+                    <div>
+                        <div class="OneThirdPercentDiv">
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>PWM(%)</label><br/>
+                        </div>
+                    </div>
+
+                    <div style="margin-right:15px; vertical-align:top;">
+                        <div style="background: gainsboro;">
+                            <div class="OneThirdPercentDiv"> <label>1</label></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveCleaningTime1"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveCleaningPWM1"></div>
+                        </div>
+                        <div style="background: aliceblue;">
+                            <div class="OneThirdPercentDiv"><label>2</label></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveCleaningTime2"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveCleaningPWM2"></div>
+                        </div>
+                        <div style="background: gainsboro;">
+                            <div class="OneThirdPercentDiv"><label>3</label></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveCleaningTime3"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveCleaningPWM3" disabled="true"></div>
+                        </div>
+                    </div>   
+                </div>
+
+                <div class = "OneFourPercentDiv">
+                    <h2>Other Setting</h2>
+                    <div style="text-align: left; margin-left: 0px;">
+                        <mat-radio-group formControlName="NonComprehensiveDataMode">
+                            <mat-radio-button  class = "HalfPercentDiv" value="1" style="margin-bottom: 30px; margin-top: 20px; margin-right: 10px;">Real Time</mat-radio-button>
+                            <mat-radio-button class = "HalfPercentDiv" value="0" style="margin-right: 10px;">Batch</mat-radio-button>
+                        </mat-radio-group>
+                        <div>
+                            <div class="HalfPercentDiv" style="width: 60%;"><label>Waiting Time(min): </label></div>
+                            <input type="text" class="HalfPercentDiv" style="width: 30%;" formControlName="NonComprehensiveWaitingTime">
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+
+        <div id="NonComprehensiveFirstDimensionSetting">
+            <h1 style="margin-top: 20px;">1D Setting</h1>
+            <div id = "NonComprehensiveBigTitle">
+                <div class="OneFourPercentDiv">  <h2>Precon Setting</h2> </div>
+                <div class="OneFourPercentDiv"> <h2>Column Setting</h2> </div>
+                <div class="OneFourPercentDiv"> <h2>HC Time Setting</h2> </div>
+                <div class="OneFourPercentDiv"> <h2>Pump Setting</h2> </div>
+            </div>
+    
+            <div id = "NonComprehensiveSmallTitle">
+                <div class="OneFourPercentDiv" style="margin-right: 15px;"> 
+                    <div>
+                        <div class="OneThirdPercentDiv">
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>PWM(%)</label><br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="OneFourPercentDiv" style="margin-right: 15px;">
+                    <div>
+                        <div class="OneThirdPercentDiv">
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>PWM(%)</label><br/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="OneFourPercentDiv">
+                    <div>
+                        <div class="HalfPercentDiv">
+                        </div>
+                        <div class="HalfPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="OneFourPercentDiv">
+                    <div>
+                        <div class="HalfPercentDiv">
+                        </div>
+                        <div class="HalfPercentDiv">
+                            <label>Voltage</label><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <div id = "NonComprehensiveFirstDimensionPrecon" class="OneFourPercentDiv" style="margin-right:15px; vertical-align:top;">
+                    <div style="background: gainsboro;" id = "FirstDimensionPreconInjection">
+                        <div>
+                            <div class="OneThirdPercentDiv"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionPreconInjectionTime1"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionPreconInjectionPWM1"></div>
+                        </div>
+                        <div>
+                            <div class="OneThirdPercentDiv"><label>Injection</label></div>
+                            <div class="OneThirdPercentDiv"></div>
+                            <div class="OneThirdPercentDiv"></div>
+                        </div>
+                        <!-- non comprehensive 4 + 2, comprehensive 2 -->
+                        <div>
+                            <div class="OneThirdPercentDiv"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionPreconInjectionTime2"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionPreconInjectionPWM2"></div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: left; margin-left: 0px;">
+                        <mat-radio-group formControlName = "NonComprehensiveTICleaningMode">
+                            <div>
+                                <mat-radio-button style="width: 80%;" value="1" style="margin-bottom: 3px; margin-top: 20px;">Ti cleaning wait time: </mat-radio-button>
+                                <input class="HalfPercentDiv" style = "width: 20%" placeholder="time/s" formControlName = "NonComprehensiveTICleanWaitTime">
+                            </div>
+                            <mat-radio-button class = "HalfPercentDiv" value="0" style="margin-right: 1px;">No Ti Cleaning</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                </div>
+                
+                <div id = "NonComprehensiveFirstDimensionColumn"  class="OneFourPercentDiv" style="margin-right:15px; vertical-align:top;">
+                    <div style="background: gainsboro;">
+                        <div class="OneThirdPercentDiv"> <label>1</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionColumnTime1"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionColumnPWM1"></div>
+                    </div>
+                    <div style="background: aliceblue;">
+                        <div class="OneThirdPercentDiv"><label>2</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionColumnTime2"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionColumnPWM2"></div>
+                    </div>
+                    <div style="background: gainsboro;">
+                        <div class="OneThirdPercentDiv"><label>3</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionColumnTime3"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionColumnPWM3"></div>
+                    </div>
+                    
+                    <div style="background: aliceblue;">
+                        <div class="OneThirdPercentDiv"><label>Clean</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionColumnTime4"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionColumnPWM4"></div>
+                    </div>
+                </div>
+
+                <div id = "NonComprehensiveFirstDimensionHC" class="OneFourPercentDiv" style="vertical-align:top;  margin-right: 15px;">
+                    <div style="background: gainsboro;">
+                        <div class="HalfPercentDiv"><label>HC Start Time</label></div>
+                        <div class="HalfPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionHCStartTime" disabled="true"></div>
+                    </div>
+                    <div style="background: aliceblue;">
+                        <div class="HalfPercentDiv"><label>HC End Time</label></div>
+                        <div class="HalfPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionHCEndTime"></div>
+                    </div>
+                </div>
+                
+                <div id = "NonComprehensiveFirstDimensionPump" class="OneFourPercentDiv" style="vertical-align:top">
+                    <div style="background: gainsboro;">
+                        <div class="HalfPercentDiv"><label>HC1</label></div>
+                        <div class="HalfPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionPumpHC1"></div>
+                    </div>
+                       
+                    <div style="background: aliceblue;">
+                        <div class="HalfPercentDiv"><label>Clean</label></div>
+                        <div class="HalfPercentDiv"> <input type="text" formControlName="NonComprehensiveFirstDimensionPumpHC2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="NonComprehensiveSecondDimensionSetting">
+            <h1 style="margin-top: 20px;">2D Setting</h1>
+            <div id="NonComprehensive2DBigTitle">
+                <div class="OneThirdPercentDiv">  <h2>Waiting Time Setting</h2> </div>
+                <div class="OneThirdPercentDiv">  <h2>Ti Setting</h2> </div>
+                <div class="OneThirdPercentDiv">  <h2>Column Setting</h2> </div>
+            </div>
+    
+            <div id="NonComprehensive2DSmallTitle">
+                <div class="OneThirdPercentDiv" style="margin-right:15px;"> 
+                    <div>
+                        <div class="HalfPercentDiv">
+                        </div>
+                        <div class="HalfPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="OneThirdPercentDiv" style="margin-right:15px;"> 
+                    <div>
+                        <div class="OneThirdPercentDiv">
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>PWM(%)</label><br/>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="OneThirdPercentDiv" style="margin-right:15px;">
+                    <div>
+                        <div class="OneThirdPercentDiv">
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>PWM(%)</label><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <div class="OneThirdPercentDiv" id = "NonComprehensive2DWaitTime">
+                    <div style="background: gainsboro; margin-right:15px;">
+                        <div class="HalfPercentDiv"><label>Waiting Time</label></div>
+                        <div class="HalfPercentDiv"> <input type="text" formControlName="NonComprehensiveSecondDimensionWaitingTime"></div>
+                    </div>
+                </div>
+
+                <div class="OneThirdPercentDiv" id="NonComprehensive2DTi" style="margin-right:15px; vertical-align:top;">
+                    <div style="background: gainsboro;" id="2DATiInjection">
+                        <div>
+                            <div class="OneThirdPercentDiv"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveSecondDimensionTiInjectionTime1"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveSecondDimensionTiInjectionPWM1"></div>
+                        </div>
+                        <div>
+                            <div class="OneThirdPercentDiv"><label>Injection</label></div>
+                            <div class="OneThirdPercentDiv"></div>
+                            <div class="OneThirdPercentDiv"></div>
+                        </div>
+                        <div>
+                            <div class="OneThirdPercentDiv"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveSecondDimensionTiInjectionTime2"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveSecondDimensionTiInjectionPWM2"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="OneThirdPercentDiv" id="NonComprehensive2DColumn" style="margin-right:15px; vertical-align:top;">
+                    <div style="background: gainsboro;">
+                        <div class="OneThirdPercentDiv"><label>1</label> </div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveSecondDimensionColumnTime1"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveSecondDimensionColumnPWM1"></div>
+                    </div>
+                    <div style="background: aliceblue;">
+                        <div class="OneThirdPercentDiv"><label>2</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveSecondDimensionColumnTime2"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveSecondDimensionColumnPWM2"></div>
+                    </div>
+                    <div style="background: gainsboro;">
+                        <div class="OneThirdPercentDiv"><label>3</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveSecondDimensionColumnTime3"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveSecondDimensionColumnPWM3"></div>
+                    </div>
+                    <div style="background: aliceblue;">
+                        <div class="OneThirdPercentDiv"><label>Clean</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveSecondDimensionColumnTime4"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="NonComprehensiveSecondDimensionColumnPWM4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <form id = "ComprehensiveForm" [formGroup] = "ComprehensiveParametersForm" style="display: none;">
+        <div id = "ComprehensiveBasicSetting">
+            <h1>Basic Setting</h1>
+                <div class = "OneFourPercentDiv" style="vertical-align: top; display: inline-block;">
+                    <h2>Test Setting</h2>
+
+                    <div style="text-align: left;">
+                        <mat-radio-group formControlName="ComprehensiveTestMode">
+                            <div>
+                              <mat-radio-button class="HalfPercentDiv" value="1" style="margin-bottom: 30px; margin-top: 20px; margin-right: 10px;">Fixed Time</mat-radio-button>
+                              <input class="HalfPercentDiv" placeholder="start time" formControlName = "ComprehensiveStartTime">
+                            </div>
+                            <div>
+                                <mat-radio-button class = "HalfPercentDiv" value="0" style="margin-right: 20px;">Non Fixed Time</mat-radio-button>
+                                <div class = "HalfPercentDiv">
+                                    <input class="HalfPercentDiv" style="width:  25%; margin-right: 5px;" placeholder="count" formControlName = "ComprehensiveRunCount">
+                                    <input class="HalfPercentDiv" style="width: 55%;" placeholder="interval(min)" formControlName = "ComprehensiveRunInterval">
+                                </div>
+                            </div>
+                        </mat-radio-group>
+                    </div>
+                </div>
+
+                <div class = "OneFourPercentDiv" style="text-align: left; vertical-align: top; display: inline-block;">
+                    <h2>Sampling Setting</h2>
+                    <div style="text-align: left;">
+                        <mat-radio-group formControlName="ComprehensiveSamplingMode">
+                            <div>
+                                <mat-radio-button  class = "HalfPercentDiv" value="0" style="margin-bottom: 3px; margin-top: 20px; margin-right: 10px;">One Time</mat-radio-button>
+                                <input class="HalfPercentDiv" placeholder="sampling time/min" formControlName = "ComprehensiveSamplingTime">
+                            </div>
+                            <div>
+                                <mat-radio-button class = "HalfPercentDiv" value="1" style="margin-bottom: 2px; margin-right: 10px;">Intermittent(4h)</mat-radio-button>
+                                <input class="HalfPercentDiv" placeholder="percent(%)" formControlName = "ComprehensiveSamplingPercent">
+                            </div>
+                        </mat-radio-group>
+                        <div>
+                            <label class = "HalfPercentDiv" style=" margin-right: 10px;">RV Open Time</label>
+                            <input class = "HalfPercentDiv" placeholder="valve open time/s" formControlName = "ComprehensiveReferenceValveOpenTime">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class = "OneFourPercentDiv" style="display: inline-block;">
+                    <h2>Humidity Filter Cleaning:</h2>
+                    <div>
+                        <div class="OneThirdPercentDiv">
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>PWM(%)</label><br/>
+                        </div>
+                    </div>
+
+                    <div style="margin-right:15px; vertical-align:top;">
+                        <div style="background: gainsboro;">
+                            <div class="OneThirdPercentDiv"> <label>1</label></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveCleaningTime1"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveCleaningPWM1"></div>
+                        </div>
+                        <div style="background: aliceblue;">
+                            <div class="OneThirdPercentDiv"><label>2</label></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveCleaningTime2"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveCleaningPWM2"></div>
+                        </div>
+                        <div style="background: gainsboro;">
+                            <div class="OneThirdPercentDiv"><label>3</label></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveCleaningTime3"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveCleaningPWM3" disabled="true"></div>
+                        </div>
+                    </div>   
+                </div>
+
+                <div class = "OneFourPercentDiv"style="vertical-align: top; display: inline-block;">
+                    <h2>Other Setting</h2>
+                    <div style="text-align: left; margin-left: 0px;">
+                        <mat-radio-group formControlName="ComprehensiveDataMode" style="margin-bottom: 5px; text-align: center;">
+                            <mat-radio-button  class = "HalfPercentDiv" value="1" style="margin-top: 20px; margin-right: 10px;">Real Time</mat-radio-button>
+                            <mat-radio-button class = "HalfPercentDiv" value="0" style="margin-right: 10px;">Batch</mat-radio-button>
+                        </mat-radio-group>
+                        <div style="margin-bottom: 5px;">
+                            <div class="HalfPercentDiv" style="width: 60%;"><label>Waiting Time(min): </label></div>
+                            <input type="text" class="HalfPercentDiv" style="width: 30%;" formControlName="ComprehensiveWaitingTime">
+                        </div>
+                        <div>
+                            <div style="display: inline-block; width:60%"><label>Sampling Rate: </label></div>
+                            <div style="display: inline-block; width:40%; text-align: left;"><input type="text" formControlName="ComprehensiveSamplingRate"></div>
+                        </div>
+                    </div>
+                </div>
+               
+        </div>
+
+        <div id = "ComprehensiveFirstDimensionSetting">
+            <h1 style="margin-top: 20px;">1D Setting</h1>
+            <div id = "ComprehensiveBigTitle">
+                <div class="OneFourPercentDiv">  <h2>Precon Setting</h2> </div>
+                <div class="OneFourPercentDiv"> <h2>Column Setting</h2> </div>
+                <div class="OneFourPercentDiv"> <h2>Pump Setting</h2> </div>
+                <div class="OneFourPercentDiv"> <h2>PID Cleaning</h2> </div>
+            </div>
+    
+            <div id = "ComprehensiveSmallTitle">
+                <div class="OneFourPercentDiv" style="margin-right: 15px;"> 
+                    <div>
+                        <div class="OneThirdPercentDiv">
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>PWM(%)</label><br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="OneFourPercentDiv" style="margin-right: 15px;">
+                    <div>
+                        <div class="OneThirdPercentDiv">
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>PWM(%)</label><br/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="OneFourPercentDiv">
+                    <div>
+                        <div class="HalfPercentDiv">
+                        </div>
+                        <div class="HalfPercentDiv">
+                            <label>Voltage</label><br/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="OneFourPercentDiv" style="margin-right: 15px;">
+                    <div>
+                        <div class="OneThirdPercentDiv">
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>PWM(%)</label><br/>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    
+            <div>
+                <div id = "ComprehensiveFirstDimensionPrecon" class="OneFourPercentDiv" style="margin-right:15px; vertical-align:top;">
+                    <div style="background: gainsboro;">
+                        <div>
+                            <div class="OneThirdPercentDiv"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionPreconInjectionTime1"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionPreconInjectionPWM1"></div>
+                        </div>
+                        <div>
+                            <div class="OneThirdPercentDiv"><label>Injection</label></div>
+                            <div class="OneThirdPercentDiv"></div>
+                            <div class="OneThirdPercentDiv"></div>
+                        </div>
+                        <div>
+                            <div class="OneThirdPercentDiv"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionPreconInjectionTime2"></div>
+                            <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionPreconInjectionPWM2"></div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: left; margin-left: 0px;">
+                        <mat-radio-group formControlName = "ComprehensiveTICleaningMode">
+                            <div>
+                                <mat-radio-button style="width: 80%;" value="1" style="margin-bottom: 3px; margin-top: 20px;">Ti cleaning wait time: </mat-radio-button>
+                                <input class="HalfPercentDiv" style = "width: 20%" placeholder="time/s" formControlName = "ComprehensiveTICleanWaitTime">
+                            </div>
+                            <mat-radio-button class = "HalfPercentDiv" value="0" style="margin-right: 1px;">No Ti Cleaning</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                </div>
+                
+                <div id = "ComprehensiveFirstDimensionColumn"  class="OneFourPercentDiv" style="margin-right:15px; vertical-align:top;">
+                    <div style="background: gainsboro;">
+                        <div class="OneThirdPercentDiv"> <label>1</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionColumnTime1"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionColumnPWM1"></div>
+                    </div>
+                    <div style="background: aliceblue;">
+                        <div class="OneThirdPercentDiv"><label>2</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionColumnTime2"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionColumnPWM2"></div>
+                    </div>
+                    <div style="background: gainsboro;">
+                        <div class="OneThirdPercentDiv"><label>3</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionColumnTime3"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionColumnPWM3"></div>
+                    </div>
+                    
+                    <div style="background: aliceblue;">
+                        <div class="OneThirdPercentDiv"><label>4</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionColumnTime4"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionColumnPWM4"></div>
+                    </div>
+
+                    <div style="background: aliceblue;">
+                        <div class="OneThirdPercentDiv"><label>Clean</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionColumnTime5"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionColumnPWM5"></div>
+                    </div>
+                </div>
+                
+                <div id = "ComprehensiveFirstDimensionPump" class="OneFourPercentDiv" style="vertical-align:top; margin-right: 15px;">
+                    <div style="background: gainsboro;">
+                        <div class="HalfPercentDiv"><label>1D Pump</label></div>
+                        <div class="HalfPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionPump"></div>
+                    </div>
+                </div>
+
+                <div id = "ComprehensiveFirstDimensionCleaning" class = "OneFourPercentDiv" style="vertical-align: top">
+                    <div style="background: aliceblue;">
+                        <div class="OneThirdPercentDiv"><label>1D PID</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionPIDCleanTime"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveFirstDimensionPIDCleanPWM"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ComprehensiveSecondDimensionSetting">
+            <h1 style="margin-top: 20px;">2D Setting</h1>
+            <div id="Comprehensive2DBigTitle">
+                <div class="OneFourPercentDiv">  <h2>Modulation</h2> </div>
+                <div class="OneFourPercentDiv">  <h2>Column Setting</h2> </div>
+                <div class="OneFourPercentDiv">  <h2>Pump Setting</h2> </div>
+                <div class="OneFourPercentDiv"> <h2>PID Cleaning</h2> </div>
+            </div>
+    
+            <div id="Comprehensive2DSmallTitle">
+                <div class="OneFourPercentDiv" style="margin-right:15px;"> 
+                    <div>
+                        <div class="OneFourPercentDiv">
+                        </div>
+                        <div class="OneFourPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                        <div class="OneFourPercentDiv">
+                            <label>MT(s)</label><br/>
+                        </div>
+                        <div class="OneFourPercentDiv">
+                            <label>LT(s)</label><br/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="OneFourPercentDiv" style="margin-right:15px;"> 
+                    <div>
+                        <div class="OneThirdPercentDiv">
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>PWM(%)</label><br/>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="OneFourPercentDiv" style="margin-right:15px;">
+                    <div>
+                        <div class="HalfPercentDiv">
+                        </div>
+                        <div class="HalfPercentDiv">
+                            <label>Voltage</label><br/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="OneFourPercentDiv" style="margin-right: 15px;">
+                    <div>
+                        <div class="OneThirdPercentDiv">
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>Time(s)</label><br/>
+                        </div>
+                        <div class="OneThirdPercentDiv">
+                            <label>PWM(%)</label><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <div class="OneFourPercentDiv" id = "ComprehensiveSecondDimensionModulationSetting">
+                    <div style="background: gainsboro; margin-right:15px;">
+                        <div class="OneFourPercentDiv"><label>1</label></div>
+                        <div class="OneFourPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionModulation1Time"></div>
+                        <div class="OneFourPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionModulation1ModulationTime"></div>
+                        <div class="OneFourPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionModulation1LoadingTime"></div>
+                    </div>
+
+                    <div style="background: aliceblue; margin-right:15px;">
+                        <div class="OneFourPercentDiv"><label>2</label></div>
+                        <div class="OneFourPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionModulation2Time"></div>
+                        <div class="OneFourPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionModulation2ModulationTime"></div>
+                        <div class="OneFourPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionModulation2LoadingTime"></div>
+                    </div>
+
+                    <div style="background: gainsboro; margin-right:15px;">
+                        <div class="OneFourPercentDiv"><label>3</label></div>
+                        <div class="OneFourPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionModulation3Time"></div>
+                        <div class="OneFourPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionModulation3ModulationTime"></div>
+                        <div class="OneFourPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionModulation3LoadingTime"></div>
+                    </div>
+
+                    <div style="background: aliceblue; margin-right:15px;">
+                        <div class="OneFourPercentDiv"><label>4</label></div>
+                        <div class="OneFourPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionModulation4Time"></div>
+                        <div class="OneFourPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionModulation4ModulationTime"></div>
+                        <div class="OneFourPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionModulation4LoadingTime"></div>
+                    </div>
+                </div>
+
+                <div id = "ComprehensiveSecondDimensionColumn"  class="OneFourPercentDiv" style="margin-right:15px; vertical-align:top;">
+                    <div style="background: gainsboro;">
+                        <div class="OneThirdPercentDiv"> <label>1</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionColumnTime1"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionColumnPWM1"></div>
+                    </div>
+                    <div style="background: aliceblue;">
+                        <div class="OneThirdPercentDiv"><label>2</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionColumnTime2"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionColumnPWM2"></div>
+                    </div>
+                    <div style="background: gainsboro;">
+                        <div class="OneThirdPercentDiv"><label>3</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionColumnTime3"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionColumnPWM3"></div>
+                    </div>
+                    
+                    <div style="background: aliceblue;">
+                        <div class="OneThirdPercentDiv"><label>4</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionColumnTime4"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionColumnPWM4"></div>
+                    </div>
+
+                    <div style="background: aliceblue;">
+                        <div class="OneThirdPercentDiv"><label>Clean</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionColumnTime5"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionColumnPWM5"></div>
+                    </div>
+                </div>
+    
+                <div id = "SecondDimensionPump" class="OneFourPercentDiv" style="vertical-align:top; margin-right: 15px;">
+                    <div style="background: gainsboro;">
+                        <div class="HalfPercentDiv"><label>2D Pump</label></div>
+                        <div class="HalfPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionPump"></div>
+                    </div>
+                </div>
+
+                <div id = "SecondDimensionCleaning" class = "OneFourPercentDiv" style="vertical-align: top">
+                    <div style="background: aliceblue;">
+                        <div class="OneThirdPercentDiv"><label>2D PID</label></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionPIDCleanTime"></div>
+                        <div class="OneThirdPercentDiv"> <input type="text" formControlName="ComprehensiveSecondDimensionPIDCleanPWM"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div id= "Submission" style="display: none; text-align: center;">
+        <h1 style="margin-top: 20px;">Submission</h1>
+        <div style="margin-top:30px;">
+            <mat-radio-group [(ngModel)]="communicationProtocol" class="HalfPercentDiv" (change)="protocolChange($event)">
+                <mat-radio-button value="Http">HTTP</mat-radio-button>
+                &nbsp;
+                <mat-radio-button value="Bluetooth">Bluetooth</mat-radio-button>
+            </mat-radio-group>
+            <div class="HalfPercentDiv"><label>Status: {{ connectionStatus }}</label></div>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <div class="OneFivePercentDiv" style ="margin-bottom: 50px;">        
+                <button  mat-raised-button  color="primary" (click)="saveParamClick()">Save Parameter</button>
+            </div>
+            <div  class="OneFivePercentDiv"  style ="margin-bottom: 50px;">
+                <button mat-raised-button  color="primary" [disabled]= "notConnected" (click)="syncFileClick()">Sync File</button>
+            </div>
+            <div class="OneFivePercentDiv"  style ="margin-bottom: 50px;">
+                <button mat-raised-button  color="primary" [disabled]= "notConnected" (click)="runClick()">Run</button>
+            </div>
+            <div class="OneFivePercentDiv"  style ="margin-bottom: 50px;">
+                <button mat-raised-button  color="primary" [disabled]= "notConnected" (click)="stopTestClick()">Stop</button>
+            </div>
+            <div class="OneFivePercentDiv"  style ="margin-bottom: 50px;">
+                <button mat-raised-button  color="primary" [disabled]= "notConnected" (click)="updateClick()">Update Param</button>
+            </div>
+        </div>
+    </div>
+    
+</div>

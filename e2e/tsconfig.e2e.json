@@ -4,10 +4,11 @@
     "outDir": "../out-tsc/e2e",
     "module": "commonjs",
     "types": [
+      "mocha",
       "node"
     ]
   },
   "include": [
-    "**.spec.ts"
-  ],
+    "**.ts"
+  ]
 }

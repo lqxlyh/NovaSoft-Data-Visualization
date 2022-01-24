@@ -1,0 +1,54 @@
+#mainPage {
+    padding-left: 10px;
+}
+
+.HalfPercentDiv{
+    display: inline-block;
+    width: 45%;
+}
+
+.OneThirdPercentDiv {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+.OneFourPercentDiv {
+    display: inline-block;
+    width: 23%;
+    text-align: center;
+}
+
+.OneFivePercentDiv {
+    display: inline-block;
+    width: 18%;
+    text-align: center;
+}
+
+input {
+    width:50%;
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+    background: gainsboro;
+}
+
+label {
+    text-align: center;
+}
+
+label, mat-radio-button {
+    font-size: larger;
+    font-weight: 500;
+}
