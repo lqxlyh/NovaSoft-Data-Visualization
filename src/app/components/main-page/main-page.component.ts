@@ -21,8 +21,20 @@ export class MainPageComponent implements OnInit {
     private PING_INTERVAL_IN_MILLI_SECONDS = 5000;
     public GCTypes: string[] = [constants.COMPREHENSIVE, constants.NON_COMPREHENSIVE]
     public selectedGCType;
+    private interval_ping_job;
 
-    private interval_ping_job
+    public Purposes: string[] = [constants.MULTIGRAP, constants.CONTINOUSTEST]
+    public selectedPurpose;
+    public Software: string[] = [constants.NOVASOFT_V1, constants.NOVASOFT_V2]
+    public selectedSoftware;
+    public Devices: string[];
+    public selectedDevice;
+    public Methods: string[];
+    public selectedMethod;
+    public MultiGraphFiles: string[];
+    public selectedMultiGraphFile;
+    public ContinousFiles: string[];
+    public selectedContinousFile;
 
     constructor(private electronService: ElectronService, private httpService: HttpService, public dialog: MatDialog) {
          this.NonComprehensiveParametersForm = this.initNonComprehensiveParamFrom();
@@ -783,6 +795,105 @@ export class MainPageComponent implements OnInit {
         if (count == '' || isNaN(count) || parseFloat(count) < 0) return "invalid count value"
         if (interval == '' || isNaN(interval) || parseFloat(interval) < 0) return "invalid interval value"
         return ""
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public PurposeChange($event) {
+        this.selectedPurpose = $event.value
+        if (this.selectedPurpose == constants.MULTIGRAP) {
+            document.getElementById("SoftwarePicker").style.display = "block";
+            document.getElementById("DevicePicker").style.display = "none";
+            document.getElementById("MethodPicker").style.display = "none";
+            document.getElementById("MultiGraphFilePicker").style.display = "none";
+            document.getElementById("ContinousFilePicker").style.display = "none";
+        } else{
+            this.Devices = [];
+            this.Devices = this.electronService.loadDeviceIds();
+            document.getElementById("SoftwarePicker").style.display = "none";
+            document.getElementById("DevicePicker").style.display = "block";
+            document.getElementById("MethodPicker").style.display = "none";
+            document.getElementById("MultiGraphFilePicker").style.display = "none";
+            document.getElementById("ContinousFilePicker").style.display = "none";
+        }
+    }
+
+    public SoftwareChange($event) {
+        this.selectedSoftware = $event.value
+        if (this.selectedSoftware == constants.NOVASOFT_V1) {
+            this.Devices = [];
+            //list device id folders under NovaSoft 1.o Data
+            this.Devices = this.electronService.loadDeviceIds();
+            document.getElementById("DevicePicker").style.display = "block";
+            document.getElementById("MethodPicker").style.display = "none";
+            document.getElementById("MultiGraphFilePicker").style.display = "none";
+            document.getElementById("ContinousFilePicker").style.display = "none";
+
+        } else {
+            this.Methods = [];
+            //list device id folders under NovaSoft 1.o Data
+            this.Methods = this.electronService.loadNovasoftV2Methods();
+            document.getElementById("DevicePicker").style.display = "none";
+            document.getElementById("MethodPicker").style.display = "block";
+            document.getElementById("MultiGraphFilePicker").style.display = "none";
+            document.getElementById("ContinousFilePicker").style.display = "none";
+        }
+    }
+
+    public DeviceChange($event) {
+        this.selectedDevice = $event.value
+        this.Methods = [];      
+        //list methods folders under this device folder
+        let purposeIndicator: string;
+        if(this.selectedPurpose == constants.MULTIGRAP)
+        {
+            purposeIndicator = constants.V1_EXPORT_FOLDER;
+        }
+        else{
+            purposeIndicator = constants.CONTINOUS_FILE_FOLDER;
+        }
+        this.Methods = this.electronService.loadNovasoftV1Methods(this.selectedDevice, purposeIndicator);
+        document.getElementById("MethodPicker").style.display = "block";
+        document.getElementById("MultiGraphFilePicker").style.display = "none";
+        document.getElementById("ContinousFilePicker").style.display = "none";
+    }
+
+    public MethodChange($event) {
+        this.selectedMethod = $event.value      
+        if(this.selectedPurpose == constants.MULTIGRAP)
+        {
+            this.MultiGraphFiles = [];
+            //list all files under quick test folder and cali folder of this method
+            this.MultiGraphFiles = this.electronService.loadFiles(this.selectedSoftware, this.selectedDevice, constants.V1_EXPORT_FOLDER, this.selectedMethod);
+            document.getElementById("MultiGraphFilePicker").style.display = "block";
+            document.getElementById("ContinousFilePicker").style.display = "none";
+        }
+        else{
+            this.ContinousFiles = [];
+            //list all scheduled files under this method
+            this.ContinousFiles = this.electronService.loadFiles(this.selectedSoftware, this.selectedDevice, constants.CONTINOUS_FILE_FOLDER,this.selectedMethod);
+            document.getElementById("MultiGraphFilePicker").style.display = "none";
+            document.getElementById("ContinousFilePicker").style.display = "block";
+        }       
     }
   
 }

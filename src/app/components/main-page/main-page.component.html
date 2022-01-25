@@ -1,13 +1,65 @@
 <div id = "mainPage">
-    <div id="GCTypePicker" style="text-align:center;">
-        <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black">
-            <mat-label>Select GC Type</mat-label>
-            <mat-select (selectionChange)="GCTypeChange($event)">
-              <mat-option *ngFor="let type of GCTypes" [value]="type">
-                {{type}}
-              </mat-option>
-            </mat-select>
-        </mat-form-field>
+    <div id="GCTypePicker" style="display: flex;">
+        <div style="margin-right: 1%;">
+            <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black;">
+                <mat-label>视图类型</mat-label>
+                <mat-select (selectionChange)="PurposeChange($event)">
+                  <mat-option *ngFor="let purpose of Purposes" [value]="purpose">
+                    {{purpose}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div id="SoftwarePicker" style="margin-right: 1%; display: none;">
+            <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black;">
+                <mat-label>软件</mat-label>
+                <mat-select (selectionChange)="SoftwareChange($event)">
+                  <mat-option *ngFor="let software of Software" [value]="software">
+                    {{software}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div id="DevicePicker" style="margin-right: 1%; display: none;">
+            <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black;">
+                <mat-label>设备</mat-label>
+                <mat-select (selectionChange)="DeviceChange($event)">
+                  <mat-option *ngFor="let device of Devices" [value]="device">
+                    {{device}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div id="MethodPicker" style="margin-right: 1%; display: none;">
+            <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black;">
+                <mat-label>测试方法</mat-label>
+                <mat-select (selectionChange)="MethodChange($event)">
+                  <mat-option *ngFor="let method of Methods" [value]="method">
+                    {{method}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div id="MultiGraphFilePicker" style="margin-right: 1%; display: none;">
+            <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black;">
+                <mat-label>测试文件</mat-label>
+                <mat-select (selectionChange)="MultiGraphFileChange($event)" multiple>
+                  <mat-option *ngFor="let file of MultiGraphFiles" [value]="file">
+                    {{file}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div id="ContinousFilePicker" style="margin-right: 1%; display: none;">
+            <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black;">
+                <mat-label>连续测试文件</mat-label>
+                <mat-select (selectionChange)="ContinousFileChange($event)">
+                  <mat-option *ngFor="let file of ContinousFiles" [value]="file">
+                    {{file}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+       </div>
     </div>
     
     <form id = "NonComprehensiveForm" [formGroup]="NonComprehensiveParametersForm" style="display: none;">

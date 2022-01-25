@@ -23,6 +23,8 @@ export class ElectronService {
     os: typeof os;
     path: typeof path;
     novaFileBaseDir: string;
+    novaV1BaseDir: string;
+    novaV2BaseDir: string;
 
     get isElectron(): boolean {
         return !!(window && window.process && window.process.type);
@@ -42,6 +44,8 @@ export class ElectronService {
             this.os = window.require('os');
             this.path = window.require('path')
             this.novaFileBaseDir = this.path.join(this.os.homedir(), constants.DOCUMENTS, constants.NOVASOFT_IARPA_DATA)
+            this.novaV1BaseDir = this.path.join(this.os.homedir(), constants.DOCUMENTS, constants.V1_DOCUMENTS)
+            this.novaV2BaseDir = this.path.join(this.os.homedir(), constants.DOCUMENTS, constants.V2_DOCUMENTS)
         }
     }
 
@@ -144,4 +148,100 @@ export class ElectronService {
         return files
     }
 
+    public loadDeviceIds(): string[]
+    {
+        let ids = [];
+        this.fs.readdirSync(this.novaV1BaseDir).forEach(item => {
+            if(this.fs.lstatSync(this.path.resolve(this.novaV1BaseDir, item)).isDirectory()) {
+                ids.push(item);
+            }
+        })
+        return ids
+    }
+
+    public loadNovasoftV1Methods(deviceId: string, purposeIndicator: string): string[]
+    {
+        let methods = [];
+        let methodPath = this.path.join(this.novaV1BaseDir, deviceId, purposeIndicator, constants.QUICK_TEST_FOLDER)
+        if (this.fs.existsSync(methodPath))
+        {
+            this.fs.readdirSync(methodPath).forEach(item => {
+                if(this.fs.lstatSync(this.path.resolve(methodPath, item)).isDirectory()) {
+                    methods.push(item);
+                }
+            })
+        }
+        let calimethodPath = this.path.join(this.novaV1BaseDir, deviceId, purposeIndicator, constants.CALI_TEST_FOLDER)
+        if (this.fs.existsSync(calimethodPath))
+        {
+            this.fs.readdirSync(calimethodPath).forEach(item => {
+                if(this.fs.lstatSync(this.path.resolve(calimethodPath, item)).isDirectory()) {
+                    if(!methods.includes(item))
+                    {
+                        methods.push(item);
+                    }
+                }
+            })
+        }
+        if (purposeIndicator == constants.V1_EXPORT_FOLDER && this.fs.existsSync(this.path.join(this.novaV1BaseDir, deviceId, purposeIndicator, constants.CUSTOMIZED_TEST_FOLDER)))
+        {
+            methods.push(constants.CUSTOMIZED_TEST_FOLDER)
+        }
+        return methods
+    }
+
+    public loadNovasoftV2Methods(): string[]
+    {
+        let methods = [];
+        let methodPath = this.path.join(this.novaV2BaseDir, constants.V2_EXPORT_FOLDER)
+        this.fs.readdirSync(methodPath).forEach(item => {
+            if(this.fs.lstatSync(this.path.resolve(methodPath, item)).isDirectory()) {
+                methods.push(item);
+            }
+        })
+        return methods
+    }
+
+    public loadFiles(software: string, deviceId: string, CompareOrContinous: string, method: string): string[]
+    {
+        let files = [];
+        if(software == constants.NOVASOFT_V2)
+        {
+            let filePath = this.path.join(this.novaV2BaseDir, constants.V2_EXPORT_FOLDER, method)
+            if (this.fs.existsSync(filePath))
+            {
+                this.fs.readdirSync(filePath).forEach(file => {
+                    if(this.fs.lstatSync(this.path.resolve(filePath, file)).isFile())
+                    {
+                        files.push(file);
+                    }
+                    
+                  });
+            } 
+        }
+        else
+        {
+            let filePath = this.path.join(this.novaV1BaseDir, deviceId, CompareOrContinous, constants.QUICK_TEST_FOLDER, method)
+            if (this.fs.existsSync(filePath))
+            {
+                this.fs.readdirSync(filePath).forEach(file => {
+                //if(this.fs.lstatSync(this.path.resolve(filePath, file)).isFile())
+                    {
+                        files.push(file);
+                    }
+              });
+            }       
+            let caliFilePath = this.path.join(this.novaV1BaseDir, deviceId, CompareOrContinous, constants.CALI_TEST_FOLDER, method)
+            if (this.fs.existsSync(caliFilePath))
+            {
+                this.fs.readdirSync(caliFilePath).forEach(file => {
+                //if(this.fs.lstatSync(this.path.resolve(filePath, file)).isFile())
+                    {
+                        files.push(file);
+                    }
+              });
+            }
+        }        
+        return files
+    }
 }
