@@ -151,11 +151,14 @@ export class ElectronService {
     public loadDeviceIds(): string[]
     {
         let ids = [];
-        this.fs.readdirSync(this.novaV1BaseDir).forEach(item => {
-            if(this.fs.lstatSync(this.path.resolve(this.novaV1BaseDir, item)).isDirectory()) {
-                ids.push(item);
-            }
-        })
+        if (this.fs.existsSync(this.novaV1BaseDir))
+        {
+            this.fs.readdirSync(this.novaV1BaseDir).forEach(item => {
+                if(this.fs.lstatSync(this.path.resolve(this.novaV1BaseDir, item)).isDirectory()) {
+                    ids.push(item);
+                }
+            })
+        }       
         return ids
     }
 
@@ -243,5 +246,12 @@ export class ElectronService {
             }
         }        
         return files
+    }
+
+    public readContinousFiles(deviceId: string, method: string, fileName: string) :string[]
+    {
+        let filePath = this.path.join(this.novaV1BaseDir, deviceId, constants.CONTINOUS_FILE_FOLDER, constants.QUICK_TEST_FOLDER, method, fileName)
+        let content = this.fs.readFileSync(filePath, 'utf8').split("\n")
+        return content
     }
 }

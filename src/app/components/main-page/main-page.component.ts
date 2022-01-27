@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { EChartsOption } from 'echarts';
 import { HttpService } from '../../services/http/http.service'
 import { ElectronService } from '../../services/electron/electron.service'
 import { FormControl, FormGroup } from '@angular/forms';
 import { constants } from '../../constants/constants';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { DialogPageComponent } from '../dialog-page/dialog-page.component';
+import { analyzeAndValidateNgModules } from '@angular/compiler';
 
 @Component({
   selector: 'app-main-page',
@@ -35,6 +37,11 @@ export class MainPageComponent implements OnInit {
     public selectedMultiGraphFile;
     public ContinousFiles: string[];
     public selectedContinousFile;
+    public timeMap = new Map();
+    public concentrationMap = new Map();
+    public chartOption: EChartsOption
+    public test
+    public testNum = 0;
 
     constructor(private electronService: ElectronService, private httpService: HttpService, public dialog: MatDialog) {
          this.NonComprehensiveParametersForm = this.initNonComprehensiveParamFrom();
@@ -894,6 +901,113 @@ export class MainPageComponent implements OnInit {
             document.getElementById("MultiGraphFilePicker").style.display = "none";
             document.getElementById("ContinousFilePicker").style.display = "block";
         }       
+    }
+
+    public ContinousFileChange($event) {
+        this.selectedContinousFile = $event.value
+        this.timeMap.clear();
+        this.concentrationMap.clear();
+        this.chartOption = null 
+        let content = this.electronService.readContinousFiles(this.selectedDevice, this.selectedMethod, this.selectedContinousFile);
+        this.parseContinousFileContent(content);//get time map and concentration map
+        this.buildContinousChart();
+
+    }
+
+    public parseContinousFileContent(lines: string[])
+    {
+        var vocName: string;
+        let times = new Array;
+        let concentrations = new Array;
+        let concentration;
+        let startIndex = lines.indexOf("Number, Name, Retention Time(s), FWHM(s), Height, Area, Concentration(ppb)") + 1;
+        for(let i = startIndex; i < lines.length - 1; i++)
+        {
+            if (lines[i].includes("Start Time"))
+            {
+                //this.times.push(lines[i].split(' ')[4] + lines[i].split(' ')[5]);
+                var date: string;
+                var time: string;
+                date = lines[i].split(' ')[4];
+                time = lines[i].split(' ')[5];
+                if (this.timeMap.has(date))
+                {
+                    times = this.timeMap.get(date);
+                    times.push(time);
+                    this.timeMap.set(date, times);
+                }
+                else
+                {
+                    let newTime = new Array;
+                    newTime.push(time);
+                    this.timeMap.set(date, newTime);
+                }
+            }
+            
+            else if (lines[i].length > 1)
+            {
+                vocName = lines[i].trim().split(":")[0].split(' ')[3];
+                concentrations = lines[i].trim().split(' ');
+                concentration = concentrations[concentrations.length - 1];              
+                if (this.concentrationMap.has(vocName))
+                {
+                    concentrations = this.concentrationMap.get(vocName);
+                    concentrations.push(concentration);
+                    this.concentrationMap.set(vocName, concentrations);
+                }
+                else{
+                    let newconcentrations = new Array;
+                    newconcentrations.push(concentration);
+                    this.concentrationMap.set(vocName, newconcentrations);
+                }
+            }
+        }
+        //this.nu = this.concentrationMap.values();
+        //this.nu = this.timeMap.get("2021/11/2");
+    }
+
+    public buildContinousChart()
+    {
+        let combinedTime = [];
+        this.timeMap.forEach((value: string[], key: string) => {
+            let firstValue = key + " " + value[0]
+            combinedTime.push(firstValue)
+            for(let i = 1; i < value.length; i++)
+            {
+                combinedTime.push(value[i])
+            }          
+        });
+
+        let vocNames: any = {}
+        vocNames.data = []
+        let series = [];
+        this.concentrationMap.forEach((value: string[], key: string) => {
+            vocNames.data.push(key);
+            let conentrations = {name: key, data: value, type: 'line'}
+            series.push(conentrations);
+        });
+        this.test = series
+        this.testNum ++;
+        this.chartOption = {
+            title: {
+                text: ''
+            },
+            tooltip: {},
+            legend: vocNames,
+            grid: { containLabel: true },
+            xAxis: {
+                type: 'category',
+                data: combinedTime,
+                axisLabel: {
+                    //interval: 0,
+                    rotate: 45
+                  }
+            },
+            yAxis: {},
+            series: series
+        }
+        this.testNum ++;
+        this.test = combinedTime;
     }
   
 }
