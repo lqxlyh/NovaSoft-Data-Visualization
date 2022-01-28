@@ -7,6 +7,7 @@ import { constants } from '../../constants/constants';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { DialogPageComponent } from '../dialog-page/dialog-page.component';
 import { analyzeAndValidateNgModules } from '@angular/compiler';
+import { sign } from 'crypto';
 
 @Component({
   selector: 'app-main-page',
@@ -33,15 +34,18 @@ export class MainPageComponent implements OnInit {
     public selectedDevice;
     public Methods: string[];
     public selectedMethod;
-    public MultiGraphFiles: string[];
+    public MultiGraphFiles: any[];
     public selectedMultiGraphFile;
     public ContinousFiles: string[];
     public selectedContinousFile;
     public timeMap = new Map();
     public concentrationMap = new Map();
     public chartOption: EChartsOption
-    public test
-    public testNum = 0;
+    public time = new Array;
+    public signal = new Array;
+    public multiSeries = []
+    public xMax = 0
+    public yMax = 0
 
     constructor(private electronService: ElectronService, private httpService: HttpService, public dialog: MatDialog) {
          this.NonComprehensiveParametersForm = this.initNonComprehensiveParamFrom();
@@ -893,6 +897,8 @@ export class MainPageComponent implements OnInit {
             this.MultiGraphFiles = this.electronService.loadFiles(this.selectedSoftware, this.selectedDevice, constants.V1_EXPORT_FOLDER, this.selectedMethod);
             document.getElementById("MultiGraphFilePicker").style.display = "block";
             document.getElementById("ContinousFilePicker").style.display = "none";
+            this.xMax = 0
+            this.yMax = 0
         }
         else{
             this.ContinousFiles = [];
@@ -908,10 +914,42 @@ export class MainPageComponent implements OnInit {
         this.timeMap.clear();
         this.concentrationMap.clear();
         this.chartOption = null 
-        let content = this.electronService.readContinousFiles(this.selectedDevice, this.selectedMethod, this.selectedContinousFile);
+        let content = this.electronService.readFiles(this.selectedPurpose, this.selectedSoftware, this.selectedDevice, this.selectedMethod, this.selectedContinousFile);
         this.parseContinousFileContent(content);//get time map and concentration map
         this.buildContinousChart();
-
+    }
+/*
+    public MultiGraphFileChange($event) {
+        this.selectedMultiGraphFile = $event.value
+        //this.test = this.selectedMultiGraphFile;
+        for(var fileName in this.selectedMultiGraphFile)
+        {
+            if (!oldFiles.includes(fileName))
+            {
+                let content = this.electronService.readFiles(this.selectedPurpose, this.selectedSoftware, this.selectedDevice, this.selectedMethod, fileName);
+            }
+        }
+        
+        var oldFiles = this.selectedMultiGraphFile
+    }
+*/
+    public change(event)
+    {
+        if(event.isUserInput)
+        {
+            if(event.source.selected)
+            {
+                this.time = []
+                this.signal = []
+                let content = this.electronService.readFiles(this.selectedPurpose, this.selectedSoftware, this.selectedDevice, this.selectedMethod, event.source.value);
+                this.parseMultiGraphFileContent(content); // get time array and signal array
+                this.buildMultiGraphChart(event.source.value);
+            }
+            else
+            {
+                this.uncheckMultiFile(event.source.value)
+            }
+        }
     }
 
     public parseContinousFileContent(lines: string[])
@@ -925,7 +963,6 @@ export class MainPageComponent implements OnInit {
         {
             if (lines[i].includes("Start Time"))
             {
-                //this.times.push(lines[i].split(' ')[4] + lines[i].split(' ')[5]);
                 var date: string;
                 var time: string;
                 date = lines[i].split(' ')[4];
@@ -962,8 +999,18 @@ export class MainPageComponent implements OnInit {
                 }
             }
         }
-        //this.nu = this.concentrationMap.values();
-        //this.nu = this.timeMap.get("2021/11/2");
+    }
+
+    public parseMultiGraphFileContent(lines: string[])
+    {
+        var startIndex = lines.lastIndexOf("Time(s),PID1(mV),Baseline,SetTemp,Temp,Pressure") + 1;
+        
+        for(let i = 7; i < lines.length; i++)
+        {
+            let tokens = lines[i].split(',')
+            this.time.push(tokens[0])
+            this.signal.push(tokens[1])
+        }
     }
 
     public buildContinousChart()
@@ -986,8 +1033,6 @@ export class MainPageComponent implements OnInit {
             let conentrations = {name: key, data: value, type: 'line'}
             series.push(conentrations);
         });
-        this.test = series
-        this.testNum ++;
         this.chartOption = {
             title: {
                 text: ''
@@ -1006,8 +1051,78 @@ export class MainPageComponent implements OnInit {
             yAxis: {},
             series: series
         }
-        this.testNum ++;
-        this.test = combinedTime;
+    }
+
+    public buildMultiGraphChart(file: string)
+    {
+        let data = []
+        for(var i = 0; i < this.time.length; i++)
+        {
+            var point = [this.time[i], this.signal[i]]
+            data.push(point)
+        }
+        let series = {symbol: "none",name: file, data: data, type: 'line'}
+        this.multiSeries.push(series)
+        if (this.xMax < Number(this.time[this.time.length - 2]))
+        {
+            this.xMax = Number(this.time[this.time.length - 2])
+        }
+        if (this.yMax < Number(this.signal[this.signal.length - 2]) + Number(this.signal[this.signal.length - 2]) * 0.2)
+        {
+            this.yMax = Number(this.signal[this.signal.length - 2]) + Number(this.signal[this.signal.length - 2]) * 0.2
+        }
+        this.chartOption = {
+            title: {
+                text: ''
+            },
+            tooltip: {trigger: 'axis',
+            },
+            legend: {},
+            xAxis: {
+                type: 'value',
+                min: 0,
+                max: this.xMax,
+            },
+            yAxis: {
+                min: 0,
+                max: this.yMax,
+                type: 'value'
+            },
+            series: this.multiSeries
+        }
+    }
+
+    public uncheckMultiFile(file: string)
+    {
+        this.multiSeries.forEach( (value) =>{
+            if(value.name == file)
+            {
+                var index = this.multiSeries.indexOf(value)
+                if (index !== -1 )
+                {
+                    this.multiSeries.splice(index, 1)
+                }
+            }
+        })
+        this.chartOption = {
+            title: {
+                text: ''
+            },
+            tooltip: {trigger: 'axis',
+            },
+            legend: {},
+            xAxis: {
+                type: 'value',
+                min: 0,
+                max: this.xMax,
+            },
+            yAxis: {
+                min: 0,
+                max: this.yMax,
+                type: 'value'
+            },
+            series: this.multiSeries
+        }
     }
   
 }

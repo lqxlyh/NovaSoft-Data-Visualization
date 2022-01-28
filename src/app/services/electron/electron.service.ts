@@ -248,9 +248,31 @@ export class ElectronService {
         return files
     }
 
-    public readContinousFiles(deviceId: string, method: string, fileName: string) :string[]
+    public readFiles(purpose: string, software: string, deviceId: string, method: string, fileName: string) :string[]
     {
-        let filePath = this.path.join(this.novaV1BaseDir, deviceId, constants.CONTINOUS_FILE_FOLDER, constants.QUICK_TEST_FOLDER, method, fileName)
+        let filePath
+        if (purpose == constants.MULTIGRAP)
+        {
+            if (software == constants.NOVASOFT_V1)
+            {
+                if (method == constants.CUSTOMIZED_TEST_FOLDER)
+                {
+                    filePath = this.path.join(this.novaV1BaseDir, deviceId, constants.V1_EXPORT_FOLDER, constants.CUSTOMIZED_TEST_FOLDER, method, fileName)
+                }
+                else
+                {
+                    filePath = this.path.join(this.novaV1BaseDir, deviceId, constants.V1_EXPORT_FOLDER, constants.QUICK_TEST_FOLDER, method, fileName)
+                }             
+            }
+            else{
+                filePath = this.path.join(this.novaV2BaseDir, constants.V2_EXPORT_FOLDER, method, fileName)
+            }
+        }
+        else
+        {
+            filePath = this.path.join(this.novaV1BaseDir, deviceId, constants.CONTINOUS_FILE_FOLDER, constants.QUICK_TEST_FOLDER, method, fileName)
+        }
+        
         let content = this.fs.readFileSync(filePath, 'utf8').split("\n")
         return content
     }

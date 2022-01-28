@@ -43,8 +43,8 @@
         <div id="MultiGraphFilePicker" style="margin-right: 1%; display: none;">
             <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black;">
                 <mat-label>测试文件</mat-label>
-                <mat-select (selectionChange)="MultiGraphFileChange($event)" multiple>
-                  <mat-option *ngFor="let file of MultiGraphFiles" [value]="file">
+                <mat-select  multiple>
+                  <mat-option (onSelectionChange)="change($event)" *ngFor="let file of MultiGraphFiles" [value]="file">
                     {{file}}
                   </mat-option>
                 </mat-select>
@@ -61,8 +61,8 @@
             </mat-form-field>
        </div>
     </div>
-    
-    <div echarts [options]="chartOption" style="margin-left: -6%; margin-right: -8%; font-size: larger; font-weight: 600;"></div>
+    {{ testNum }}
+    <div echarts [options]="chartOption" style="font-size: larger; font-weight: 600;"></div>
     
     <form id = "NonComprehensiveForm" [formGroup]="NonComprehensiveParametersForm" style="display: none;">
         <div id="NonComprehensiveBasicSetting">
