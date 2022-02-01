@@ -13,7 +13,7 @@
         <div id="SoftwarePicker" style="margin-right: 1%; display: none;">
             <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black;">
                 <mat-label>软件</mat-label>
-                <mat-select (selectionChange)="SoftwareChange($event)">
+                <mat-select (selectionChange)="SoftwareChange($event)" [(value)]="selectedSoftware">
                   <mat-option *ngFor="let software of Software" [value]="software">
                     {{software}}
                   </mat-option>
@@ -23,7 +23,7 @@
         <div id="DevicePicker" style="margin-right: 1%; display: none;">
             <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black;">
                 <mat-label>设备</mat-label>
-                <mat-select (selectionChange)="DeviceChange($event)">
+                <mat-select (selectionChange)="DeviceChange($event)" [(value)]="selectedDevice">
                   <mat-option *ngFor="let device of Devices" [value]="device">
                     {{device}}
                   </mat-option>
@@ -33,7 +33,7 @@
         <div id="MethodPicker" style="margin-right: 1%; display: none;">
             <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black;">
                 <mat-label>测试方法</mat-label>
-                <mat-select (selectionChange)="MethodChange($event)">
+                <mat-select (selectionChange)="MethodChange($event)" [(value)]="selectedMethod">
                   <mat-option *ngFor="let method of Methods" [value]="method">
                     {{method}}
                   </mat-option>
@@ -43,7 +43,7 @@
         <div id="MultiGraphFilePicker" style="margin-right: 1%; display: none;">
             <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black;">
                 <mat-label>测试文件</mat-label>
-                <mat-select  multiple>
+                <mat-select  multiple [(value)]="selectedMultiFile">
                   <mat-option (onSelectionChange)="change($event)" *ngFor="let file of MultiGraphFiles" [value]="file">
                     {{file}}
                   </mat-option>
@@ -53,7 +53,7 @@
         <div id="ContinousFilePicker" style="margin-right: 1%; display: none;">
             <mat-form-field appearance="fill"  style="font-size: larger; font-weight: 600; color:black;">
                 <mat-label>连续测试文件</mat-label>
-                <mat-select (selectionChange)="ContinousFileChange($event)">
+                <mat-select (selectionChange)="ContinousFileChange($event)" [(value)]="selectedContinousFile">
                   <mat-option *ngFor="let file of ContinousFiles" [value]="file">
                     {{file}}
                   </mat-option>
@@ -61,7 +61,7 @@
             </mat-form-field>
        </div>
     </div>
-    {{ testNum }}
+    {{ test }}
     <div echarts [options]="chartOption" style="font-size: larger; font-weight: 600;"></div>
     
     <form id = "NonComprehensiveForm" [formGroup]="NonComprehensiveParametersForm" style="display: none;">
